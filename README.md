@@ -65,7 +65,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Leest goed elk kopje, tekst element, naam item, prijs en andere elementen op de site voor
 
   Leest de alt tekst van een afbeelding
-  <img src="readme-images/alt-tekst-lezen.png" width="375px" alt="voorbeeld van alt tekst lezen">
+  <img src="readme-images/alt-tekst-lezen" width="375px" alt="voorbeeld van alt tekst lezen">
 
   #### Muis en Toetsenbord 
   - Je kan niet zonder te klikken op het scherm naar een ander onderdeel gaan, bv: van de navigatie naar de main content
