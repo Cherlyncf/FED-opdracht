@@ -59,30 +59,37 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen
 
   #### Screenreader
-  - De screenreader las de teskt snel voor
+  - De screenreader las de tekst snel voor
   - Benoemd eerst de aantal onderdelen die in de lijst staan en leest daarna de lijst items één voor één op
   - Leest eerst de naam van de lijst op, bv: tops en daarna alle linkjes die in de lijst staan 
   - Leest goed elk kopje, tekst element, naam item, prijs en andere elementen op de site voor
 
   Leest de alt tekst van een afbeelding
-  <img src="readme-images/alt-tekst-lezen" width="375px" alt="voorbeeld van alt tekst lezen">
+  
+  <img src="readme-images/alt-tekst-lezen.png" width="375px" alt="voorbeeld van alt tekst lezen">
 
   #### Muis en Toetsenbord 
   - Je kan niet zonder te klikken op het scherm naar een ander onderdeel gaan, bv: van de navigatie naar de main content
 
   Je ziet waar je tabt 
-  foto
+  
+   <img src="readme-images/tab-zichtbaar.png" width="375px" alt="voorbeeld dat de tab zichtbaar is">
 
   In de footer zie je niet op het scherm welke link geselecteerd is
-  foto
+  
+  <img src="readme-images/footerbevinding.png" width="375px" alt="voorbeeld footer bevinding">
 
   Oplossing:
+  Ook in de footer de tab zichtbaar maken 
 
   Je kan de lijst in de navigatie niet eerst bekijken, want je opent meteen de link 
-  foto
+  
+  <img src="readme-images/link-items.png" width="375px" alt="voorbeeld link items wordt niet geopend">
 
   Oplossing:
-
+  Als je op één van de navigatie list items komt wordt er aangegeven dat je het kan openen, zodat je de andere list items daarin kan zien.
+  
+ <img src="readme-images/link-items-open.png" width="375px" alt="voorbeeld link items oplossing">
 
   #### Motoriek (shocks, elastiekjes)
   Deze test heb ik niet uitgevoerd
@@ -95,17 +102,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - De teksten mogen in het algemeen donkerder
 
   Sommige teksten kon hij niet lezen door de tekstkleur zelf en achtergronden die gecombineerd waren met bepaalde tekstkleuren.
-  foto
+  
+   <img src="readme-images/achtergrond-tekst-slecht-leesbaar.png" width="375px" alt="voorbeeld slecht leesbare tekst door achtergrond">
 
+   <img src="readme-images/knop-slecht-leesbaar.png" width="375px" alt="voorbeeld slecht leesbare knop">
+  
   Oplossing:
+  De teskten op lichte achtergronden donkerder maken of een andere achtergrondkleur gebruiken
 
   Sommige teksten hadden een te kleine lettertype waardoor hij het helemaal niet kon lezen.
-  foto
-
+  
+   <img src="readme-images/tekst-te-klein.png" width="375px" alt="voorbeeld slecht leesbare tekst door achtergrond">
+  
   Oplossing:
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Een lettertype groote gebruiken die goed leesbaar is
+  
 </details>
 
 
