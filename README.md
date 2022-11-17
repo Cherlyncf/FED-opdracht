@@ -56,28 +56,53 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Lijst met je bevindingen die in de test naar voren kwamen
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  - De screenreader las de teskt snel voor
+  - Benoemd eerst de aantal onderdelen die in de lijst staan en leest daarna de lijst items één voor één op
+  - Leest eerst de naam van de lijst op, bv: tops en daarna alle linkjes die in de lijst staan 
+  - Leest goed elk kopje, tekst element, naam item, prijs en andere elementen op de site voor
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Leest de alt tekst van een afbeelding
+  <img src="readme-images/alt-tekst-lezen.png" width="375px" alt="voorbeeld van alt tekst lezen">
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  - Je kan niet zonder te klikken op het scherm naar een ander onderdeel gaan, bv: van de navigatie naar de main content
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Je ziet waar je tabt 
+  foto
+
+  In de footer zie je niet op het scherm welke link geselecteerd is
+  foto
+
+  Oplossing:
+
+  Je kan de lijst in de navigatie niet eerst bekijken, want je opent meteen de link 
+  foto
+
+  Oplossing:
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Deze test heb ik niet uitgevoerd
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  De gebruiker heeft de site getest met een bril die ervoor zorgt dat hij heel slecht en wazig ziet.
+
+  - Hij ging best snel door te site
+  - De teksten mogen in het algemeen donkerder
+
+  Sommige teksten kon hij niet lezen door de tekstkleur zelf en achtergronden die gecombineerd waren met bepaalde tekstkleuren.
+  foto
+
+  Oplossing:
+
+  Sommige teksten hadden een te kleine lettertype waardoor hij het helemaal niet kon lezen.
+  foto
+
+  Oplossing:
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
