@@ -100,6 +100,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - Hij ging best snel door te site
   - De teksten mogen in het algemeen donkerder
+  - Met moeite kon hij een maat selecteren om de lettertype daar te klein en slecht leesbaar was door de kleur
+  - Hij kon de bestelling niet afronden, omdat die pagina veel gebruik maakt van lichte achtergronden in combinatie met een klein lettertype en een lichte tekst kleur
 
   Sommige teksten kon hij niet lezen door de tekstkleur zelf en achtergronden die gecombineerd waren met bepaalde tekstkleuren.
   
