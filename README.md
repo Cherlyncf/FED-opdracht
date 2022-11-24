@@ -129,13 +129,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -149,17 +144,35 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Dit ging goed:
+  - Het maken van de footer
+  - Een andere font in html en CSS zetten
+  - Styling van de laatste section
+  
+  Dit vindt ik lastig:
+  - Ik heb geen idee hoe je een form moet maken met radio buttons (voor de footer)
+  - Een dropdown maken
+  - Ik heb geen idee hoe je een carousel/ slider moet maken met foto's
+  - Grids gebruiken en positioneren
+  - De juiste CSS code gebruiken voor de verschillende stylingen en sections die ik heb gemaakt
+  
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Cherlyn:                                                    
+  |- Hoe moet ik een heading en buttons positioneren op een afbeelding? 
+  |- Hoe moet ik een carrousel/ slider maken met foto’s?
+  |- Wat voor soort file (png, svg, jpg) kan ik gebruiken om een foto in een button te zetten?
+  |- Hoe moet ik een dropdown maken?
+  |- Hoe moet ik een form maken met radio buttons?
+  
+  | Omar:
+  
+  | Ouiam:
+  
+  | Isa:              
 
 
   ### Verslag van meeting
