@@ -149,13 +149,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Het maken van de footer
   
-  <img src="readme-images/footer" width="375px" alt="">
+  <img src="readme-images/footer.png" width="375px" alt="">
   
-   <img src="readme-images/footerstyling" width="375px" alt="">
+   <img src="readme-images/footerstyling.png" width="375px" alt="">
 
   Styling van de laatste section
   
-  <img src="readme-images/stylingginggoed" width="375px" alt="">
+  <img src="readme-images/stylingginggoed.png" width="375px" alt="">
   
   Dit vindt ik lastig:
   - Ik heb geen idee hoe je een form moet maken met radio buttons (voor de footer)
@@ -164,11 +164,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Grids gebruiken en positioneren
   
-  <img src="readme-images/stylingmetcss" width="375px" alt="">
+  <img src="readme-images/stylingmetcss.png" width="375px" alt="">
 
   De juiste CSS code gebruiken voor de verschillende stylingen en sections die ik heb gemaakt
   
-   <img src="readme-images/section1styling" width="375px" alt="">
+   <img src="readme-images/section1styling.png" width="375px" alt="">
 
  
   
