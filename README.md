@@ -128,8 +128,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### De home pagina en product pagina: 
+  <img src="readme-images/breakdownschets.jpg" width="375px" alt="breakdown pagina">
 
 
 </details>
@@ -145,16 +145,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   Dit ging goed:
-  - Het maken van de footer
   - Een andere font in html en CSS zetten
-  - Styling van de laatste section
+  
+  Het maken van de footer
+  
+  <img src="readme-images/footer" width="375px" alt="">
+  
+   <img src="readme-images/footerstyling" width="375px" alt="">
+
+  Styling van de laatste section
+  
+  <img src="readme-images/stylingginggoed" width="375px" alt="">
   
   Dit vindt ik lastig:
   - Ik heb geen idee hoe je een form moet maken met radio buttons (voor de footer)
   - Een dropdown maken
   - Ik heb geen idee hoe je een carousel/ slider moet maken met foto's
-  - Grids gebruiken en positioneren
-  - De juiste CSS code gebruiken voor de verschillende stylingen en sections die ik heb gemaakt
+  
+  Grids gebruiken en positioneren
+  
+  <img src="readme-images/stylingmetcss" width="375px" alt="">
+
+  De juiste CSS code gebruiken voor de verschillende stylingen en sections die ik heb gemaakt
+  
+   <img src="readme-images/section1styling" width="375px" alt="">
+
+ 
   
 
 
