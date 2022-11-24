@@ -164,6 +164,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Grids gebruiken en positioneren
   
+  <img src="readme-images/fotometbutton.png" width="375px" alt="">
+
   <img src="readme-images/stylingmetcss.png" width="375px" alt="">
 
   De juiste CSS code gebruiken voor de verschillende stylingen en sections die ik heb gemaakt
@@ -178,11 +180,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
   | Cherlyn:                                                    
-  |- Hoe moet ik een heading en buttons positioneren op een afbeelding? 
-  |- Hoe moet ik een carrousel/ slider maken met foto’s?
-  |- Wat voor soort file (png, svg, jpg) kan ik gebruiken om een foto in een button te zetten?
-  |- Hoe moet ik een dropdown maken?
-  |- Hoe moet ik een form maken met radio buttons?
+  |- Hoe moet ik een heading en buttons positioneren op een afbeelding? <br>
+  |- Hoe moet ik een carrousel/ slider maken met foto’s? <br>
+  |- Wat voor soort file (png, svg, jpg) kan ik gebruiken om een foto in een button te zetten? <br>
+  |- Hoe moet ik een dropdown maken? <br>
+  |- Hoe moet ik een form maken met radio buttons? <br>
   
   | Omar:
   
