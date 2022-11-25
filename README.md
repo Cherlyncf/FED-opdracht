@@ -190,7 +190,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - Background image gebruiken, zodat ik tekst op de afbeelding kan zetten (met viewport)
   - In de footer ook linkjes zetten
-  - In de footer a zetten bij de linkjes
   - Classes zetten op de section om makkelijker te stijlen
   - Input type radio gebruiken voor radio button (label om heen)
   - Om een slideshow te maken kan ik overflow gebruiken
