@@ -183,22 +183,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   |- Hoe moet ik een heading en buttons positioneren op een afbeelding? <br>
   |- Hoe moet ik een carrousel/ slider maken met foto’s? <br>
   |- Hoe moet ik een dropdown maken? <br>
-  |- Hoe moet ik een form maken met radio buttons? <br>
-  
-  | Omar:
-  
-  | Ouiam:
-  
-  | Isa:              
-
+  |- Hoe moet ik een form maken met radio buttons? <br>            
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Background image gebruiken, zodat ik tekst op de afbeelding kan zetten (met viewport)
+  - In de footer ook linkjes zetten
+  - In de footer a zetten bij de linkjes
+  - Classes zetten op de section om makkelijker te stijlen
+  - Input type radio gebruiken voor radio button (label om heen)
+  - Om een slideshow te maken kan ik overflow gebruiken
 
 </details>
 
