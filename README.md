@@ -182,7 +182,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Cherlyn:                                                    
   |- Hoe moet ik een heading en buttons positioneren op een afbeelding? <br>
   |- Hoe moet ik een carrousel/ slider maken met foto’s? <br>
-  |- Wat voor soort file (png, svg, jpg) kan ik gebruiken om een foto in een button te zetten? <br>
   |- Hoe moet ik een dropdown maken? <br>
   |- Hoe moet ik een form maken met radio buttons? <br>
   
