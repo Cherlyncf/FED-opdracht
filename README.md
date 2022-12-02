@@ -177,9 +177,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | Cherlyn:                                                    
+  
+  Vragen:
+                                                    
   |- Hoe moet ik een heading en buttons positioneren op een afbeelding? <br>
   |- Hoe moet ik een carrousel/ slider maken met foto’s? <br>
   |- Hoe moet ik een dropdown maken? <br>
@@ -193,6 +193,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Classes zetten op de section om makkelijker te stijlen
   - Input type radio gebruiken voor radio button (label om heen)
   - Om een slideshow te maken kan ik overflow gebruiken
+  - Em gebruiken inplaats van Px
 
 </details>
 
@@ -210,13 +211,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  
+  Vragen:
+                                                    
+  |- Hoe kan ik de groote van een background image aanpassen zonder padding te gebruiken? En kan je het ook alleen in een bepaalde section gebruiken? <br>
+  |- Hoe laat ik de footer mee schalen? <br>
+  |- Welke code kan ik gebruiken om een image in een button te zetten? <br>
+  |- Mijn screenreader leest alleen de buttons en linkjes op, maar geen tekst of afbeeldingen <br>   
 
 
   ### Verslag van meeting
