@@ -207,8 +207,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Dit ging goed:
+  - De content op de website laten mee schalen
+  - Grids en overflow gebruiken
+ 
+  Dit vindt ik lastig:
+  - De footer laten meeschalen als het scherm groter wordt
 
   ### Agenda voor meeting
   
@@ -217,17 +221,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   |- Hoe kan ik de groote van een background image aanpassen zonder padding te gebruiken? En kan je het ook alleen in een bepaalde section gebruiken? <br>
   |- Hoe laat ik de footer mee schalen? <br>
   |- Welke code kan ik gebruiken om een image in een button te zetten? <br>
-  |- Mijn screenreader leest alleen de buttons en linkjes op, maar geen tekst of afbeeldingen <br>   
-
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
+  - Buttons veranderen naar linkjes
+  - Costum properties gebruiken
+  - Br eruit halen en vervangen door de width smaller te maken
 </details>
 
 
