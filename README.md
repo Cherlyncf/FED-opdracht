@@ -212,7 +212,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Grids en overflow gebruiken
  
   Dit vindt ik lastig:
-  - De footer laten meeschalen als het scherm groter wordt
+  De footer laten meeschalen als het scherm groter wordt
+  
+  <img src="readme-images/footer-mee-schalen.png" width="375px" alt="voorbeeld footer bevinding">
 
   ### Agenda voor meeting
   
