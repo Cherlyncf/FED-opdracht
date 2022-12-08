@@ -359,8 +359,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Bron van alle foto's: https://dailypaperclothing.com 
+  2. Bron zoek icoon: https://cdn-icons-png.flaticon.com/512/54/54481.png
+  3. Bron winkelmandje icoon: https://cdn-icons-png.flaticon.com/512/118/118096.png
+  4. Bron hamburgermenu icoon: https://www.veryicon.com/download/png/miscellaneous/01-monochrome-linear-icon-library/menu-bar?s=256
+  5. Bron sluitknop:https://www.flaticon.com/free-icon/clear-button_60994
+  6. Bron terug knop: https://cdn-icons-png.flaticon.com/512/1/1216.png
+  7. Bron styling header responsive: https://codepen.io/shooft/pen/GRxXboQ
+  8. Bron styling radio button: https://codepen.io/robertspier/pen/LYrmryG
 
 </details>
