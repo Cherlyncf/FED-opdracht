@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw 
 
   #### Je focus:
-  Surface plane 
+  Responsive 
  
 </details>
 
@@ -39,12 +39,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://dailypaperclothing.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/homepagina.png" width="375px" alt="de homepagina">
+  De homepagina
+  
+  <img src="readme-images/breakdown-schets-home.jpg" width="375px" alt="de homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/detailpagina.png" width="375px" alt="pagina als je op een product klikt">
+  Onze winkels pagina
+  
+  <img src="readme-images/breakdown-schets-winkels.jpg" width="375px" alt="onze winkels">
  
 </details>
 
@@ -283,26 +285,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Dit ging goed:
   - Het maken van de tweede pagina ging met gemak
   - Ik begin media query steeds beter te begrijpen
-  - Ik haalde mijn pagina’s door de W3C validator en kreeg een paar fout meldingen die ik makkelijk kon oplossen
   - Ik haalde mijn CSS door de W3C validator en ik kreeg geen foutmeldingen
+  
+  Ik haalde mijn pagina’s door de W3C validator en kreeg een paar fout meldingen die ik makkelijk kon oplossen
 
+  <img src="readme-images/warning-melding.png" width="375px" alt="">
+  
+  
   Dit vindt ik lastig:
   
   - Ik vond het best lastig om de footer responsieve te maken
+  - Ik haalde mijn pagina’s door de W3C validator en ik kreeg een melding over dat een button niet in een lijst mag staan
   
   Op de mobiele formaat heb ik een uitklapmenu in de footer, maar als ik het scherm groter maakt moet de uitklapmenu volledig verdwijnen en de content erin moet volledig verspreiden in de footer
   
-  <img src="readme-images/footer-details" width="375px" alt="">
-
+  <img src="readme-images/footer-details.png" width="375px" alt="">
+  
+  Ik wil dat de dagen en tijden in het uitklapmenu bij de “opening hours” uit elkaar gaan staan, maar ik weet niet hoe dat moet. Ook wil ik dat de knop in het midden staat, maar dat lukt niet zo goed.
+  
+   <img src="readme-images/openingstijden.png" width="375px" alt="">
+  
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  
+  vragen:
+  - Mag in een lijst een button zetten (krijg error te zien) ?
+  - Ik krijg waarschuwingen over dat mijn sections geen headings hebben, maar moet je een heading voor elke section gebruiken?
+  - Hoe kan ik tekst in één p tag uit elkaar laten staan?
+  - Is het mogelijk om een details tag te stylen?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
