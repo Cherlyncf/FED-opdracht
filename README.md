@@ -180,10 +180,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Vragen:
                                                     
-  |- Hoe moet ik een heading en buttons positioneren op een afbeelding? <br>
-  |- Hoe moet ik een carrousel/ slider maken met foto’s? <br>
-  |- Hoe moet ik een dropdown maken? <br>
-  |- Hoe moet ik een form maken met radio buttons? <br>            
+  - Hoe moet ik een heading en buttons positioneren op een afbeelding? <br>
+  - Hoe moet ik een carrousel/ slider maken met foto’s? <br>
+  - Hoe moet ik een dropdown maken? <br>
+  - Hoe moet ik een form maken met radio buttons? <br>            
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -220,9 +220,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Vragen:
                                                     
-  |- Hoe kan ik de groote van een background image aanpassen zonder padding te gebruiken? En kan je het ook alleen in een bepaalde section gebruiken? <br>
-  |- Hoe laat ik de footer mee schalen? <br>
-  |- Welke code kan ik gebruiken om een image in een button te zetten? <br>
+  - Hoe kan ik de groote van een background image aanpassen zonder padding te gebruiken? En kan je het ook alleen in een bepaalde section gebruiken? <br>
+  - Hoe laat ik de footer mee schalen? <br>
+  - Welke code kan ik gebruiken om een image in een button te zetten? <br>
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -279,8 +279,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  
+  Dit ging goed:
+  - Het maken van de tweede pagina ging met gemak
+  - Ik begin media query steeds beter te begrijpen
+  - Ik haalde mijn pagina’s door de W3C validator en kreeg een paar fout meldingen die ik makkelijk kon oplossen
+  - Ik haalde mijn CSS door de W3C validator en ik kreeg geen foutmeldingen
 
+  Dit vindt ik lastig:
+  
+  - Ik vond het best lastig om de footer responsieve te maken
+  
+  Op de mobiele formaat heb ik een uitklapmenu in de footer, maar als ik het scherm groter maakt moet de uitklapmenu volledig verdwijnen en de content erin moet volledig verspreiden in de footer
+  
+  <img src="readme-images/footer-details" width="375px" alt="">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
