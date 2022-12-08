@@ -16,12 +16,32 @@ button, summary {
 
 	--color-text: #000000;
 	--color-background:#ffffff;
+	
+	--color-link-background:#000000;
+	--color-link-text:#ffffff;
+	
+	--color-button-background:#000000;
+	--color-border: #000000;
+	
+	--color-footer-background:#000000;
+	--color-footer-text:#ffffff;
+	--color-border-button: #ffffff;
+
+	--color-input-background: #282828;
+	--color-input-border: #282828;
+	--color-input-text: #ffffff;
+
+	--color-border-hr: #282828;
+	--color-border-omlijning: #eee;
+
+	--color-link-directions-background:#ffffffff;
+	--color-link-directions-text:#000000;
+	--color-link-directions-border:#000000;
+
+	--color-details-background: #eee;
+
 	--font-size: 1em;
 }
-
-/****************/
-/* JOUW STYLING */
-/****************/
 
 * {
     max-width: 100%;
@@ -32,46 +52,217 @@ button, summary {
 body {
 	font-family: 'Roboto', sans-serif;
 }
-/* header styling */
-header ul {
-	display: flex;
-	justify-content: start;
-	list-style-type: none;
+main {
+	padding-bottom: 3em;
 }
 
-header nav li img:nth-child(1) {
-	height: 1.2em;
-	margin: 1em;
+/*************/
+/* DE HEADER */
+/*************/
+@media (min-width:38em) {
+	hr.solid {
+		border: none;
+	}
+	header button {
+		display: none;
+	}
+	header ul li img {
+		padding-right: 1em;
+	}
+	header li {
+		padding-right: 1em;
+	}
 }
+header {
+	display: flex;
+	min-height: 4em;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+	border-bottom: solid .1em var(--color-border-omlijning);
+    background-color: var(--color-background);
+  }
+/* alle links in de header als het menu open is */
+header a {
+	padding:1em 0;
+	color:var(--color-text);
+	text-decoration:none;
+  }
+header a img {
+	padding-left: 1em;
+	height: 1.5em;
+}
+/* header styling menu dicht */
+header li{
+    display: inline;
+}
+header ul:first-child {
+    display: flex;
+	align-items: center;
+    gap: .8em;
+    padding: 1em;
+}
+header ul li:first-of-type {
+    margin-right: auto;
+}
+header li img{
+    height: 1.5em;
+}
+
+/*****************/
+/* BEIDE BUTTONS Styling */
+  /*****************/
+  header button {
+	appearance:none;
+	background-color:var(--color-background);
+	border:black;
+  }
+  header button img {
+	height: 1.7em;
+  }
+
+/***************/
+/* SLUIT BUTTON */
+/***************/
+  nav button {
+    margin-left: 17em;
+  }
+  
+/************/
+/* HET MENU */
+/************/
+  nav {
+	padding:1em;
+	
+	display:grid;
+	align-content:start;
+	gap:.5em;
+	
+	position:fixed;
+	left:50%;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	transform:translatex(100%);
+	background-color: var(--color-background);
+	transition:transform 1.5s;
+  }
+  /* als menu open is */
+  nav.toonMenu {
+	/* JOUW CODE HIER - stap 4 */
+	transform:translatex(0);
+  }
+.toonMenu a img {
+	height: 1em;
+  }
+  
+  /*******************/
+  /* LIJST MET LINKS */
+  /*******************/
+  nav ul { 
+	margin:0; 
+	padding:0em;
+	list-style:none;
+  }
+  
+  /************************/
+  /* EEN LINK IN DE LIJST */
+  /************************/
+  nav a {
+	/* icon en tekst met gap-je naast elkaar */
+	display:flex;
+	align-items:center;
+	column-gap:.25em;
+	border-bottom:solid 1px var(--menu-border);
+  }
+  
+  nav a img {
+	width:auto;
+	height:2em;
+  }
+  
+  nav a.active {
+	font-weight:bold;
+  }
+  
+/****************************************************************/
+/* styling voor de header als de browser minimaal 38em breed is */
+/****************************************************************/
+/*link van de code: https://codepen.io/shooft/pen/GRxXboQ */
+@media (min-width:38em) {
+	header > button {
+		display:none;
+	}
+	nav {
+		position:static;
+		transform:none;
+		padding:0;
+		background:none;
+	}
+	nav button {
+		display:none;
+	}
+	nav ul {
+		display:flex;
+		gap:1em;
+	}
+	nav a {
+		flex-direction:column;
+		border:none;
+	}
+	header > a:last-of-type {
+		flex-direction:column;
+	}
+}
+/****************************************************************/
+/* styling voor de header als de browser minimaal 57em breed is */
+/****************************************************************/
+@media (min-width:57em) {
+	header > a:last-of-type,
+	nav a {
+	  display: flex;
+	}
+
+}
+
+/****************************************************************/
+/* 1: Home pagina */
+/****************************************************************/
 
 /*********************/
 /* SECTION STYLING 1 */
 /*********************/
-
 .WinterFavourItems  {
 	background-image: url("../images/gifting-hero.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
-	padding-top: 43%;
+	padding-top: 40%;
 }
 .WinterFavourItems h1 {
-	font-size: 1.5em;
-	padding: 0em .67em 0em;
+	font-size: 1.8em;
+	padding: 0em 1em 2em;
 }
-
+.WinterFavourItems ul {
+	display: flex;
+	align-items: center;
+	padding-bottom: 3em;
+}
 .WinterFavourItems li {
 	list-style: none;
 }
-.WinterFavourItems button {
+.WinterFavourItems a {
 	margin: .8em 0em 3em 1em;
-	padding: 1.34em;
+	padding: 1em 1.5em;
 	width: auto;
 	border-radius: 2em;
-	border: 1em;
-	background-color: #000000;
-	color: #ffffff;
+	border: solid .1em var(--color-border);
+	background-color: var(--color-link-background);
+	color: var(--color-link-text);
+	text-decoration: none;
 }
 
 /*********************/
@@ -91,6 +282,7 @@ header nav li img:nth-child(1) {
 .NewestArrivals ul p:nth-child(3) {
 	font-size: 1em;
 	padding-top: .5em;
+	padding-bottom: 1.5em;
 }
 .NewestArrivals ul {
 	display:flex;
@@ -102,21 +294,21 @@ header nav li img:nth-child(1) {
 	list-style: none;
 	padding: 0em 1em 1em 1em;
 }
-.NewestArrivals button {
+.NewestArrivals a {
 	margin: 1em 1em 3em;
-	padding: 1.3em 3.5em;
+	padding: 1em 3em;
 	border-radius: 2em;
-	border: 1em;
-	background-color: #000000;
-	color: #ffffff;
+	border: solid .1em var(--color-border);
+	text-decoration: none;
+	background-color: var(--color-link-background);	
+	color: var(--color-link-text);
 }
 
 /*********************/
 /* SECTION STYLING 3 */
 /*********************/
-
 .EssentialsCollection p:first-child {
-	padding: 3em 1.2em 0em;
+	padding: 6em 1.2em 0em;
 	font-size: .75em;
 }
 .EssentialsCollection h2 {
@@ -127,7 +319,6 @@ header nav li img:nth-child(1) {
 	height: 100%;
 	padding: 0em 1em 1.38em;
 }
-
 .EssentialsCollection img:nth-last-of-type(3) {
     width: 50%;
     height: auto;
@@ -136,7 +327,7 @@ header nav li img:nth-child(1) {
 }
 .EssentialsCollection p:nth-of-type(2) {
 	font-size: 1em;
-	padding: .5em 1em;
+	padding: 2em 1em;
 }
 .EssentialsCollection ul {
 	display:flex;
@@ -155,64 +346,60 @@ header nav li img:nth-child(1) {
 .EssentialsCollection p:last-of-type{
 	font-size: 1em;
 }
-.EssentialsCollection button {
+.EssentialsCollection a {
 	display: flex;
 	justify-content: center;
 	margin: .8em 1em;
-	padding: 1.34em;
-	width: 33%;
+	padding: 1em;
+	width: 15em;
 	border-radius: 2em;
-	border: 1em;
-	background-color: #000000;
-	color: #ffffff;
+	border: solid .1em var(--color-border);
+	text-decoration: none;
+	background-color: var(--color-link-background);
+	color: var(--color-link-text);
 }
+
 /*********************/
 /* SECTION STYLING 4 */
 /*********************/
-
-.DailypaperCollections img {
-	width: 100%;
-	height: 90%;
-}
 .DailypaperCollections ul {
 	display:grid;
 	grid-template-columns: repeat(auto-fit, minmax(min(32em, 100%), 1fr) );
 	column-gap: 1em;
-	list-style:none;
-	padding: 3em 0 3em;
+	padding: 3em 0 0em;
 }
 .DailypaperCollections li {
 	display:flex;
 	flex-direction:column;
-	justify-content: center;
-  }
-  .DailypaperCollections p {
-    font-size: .75em;
-    padding: .5em .67em;
+    padding: .1em 0em 2.81em;
+}
+.DailypaperCollections img {
+	width: 100%;
+	height: 90%;
+}
+.DailypaperCollections p {
+    font-size: 1em;
+    padding: .5em 0.5em;
 }
 .DailypaperCollections h2 {
     padding: 0em .4em 1em;
     font-size: 1.25em;
 }
-.DailypaperCollections li {
-    display: flex;
-    align-items: flex-start;
-    padding: .1em 0em 2.81em;
-    justify-content: space-between;
-}
-  .DailypaperCollections button {
-    padding: 1.34em;
-    width: 33%;
+.DailypaperCollections a {
+    padding: 1em;
+    width: 10em;
+	text-align: center;
     border-radius: 2em;
-    border: 1em;
-    background-color: #000000;
-    color: #ffffff;
+	border: solid .1em var(--color-border);
+	text-decoration: none;
 	margin-left: .67em;;
+	background-color: var(--color-link-background);
+	color: var(--color-link-text);
 }
+
 /*********************/
 /* SECTION STYLING 5 */
 /*********************/
-
 .OurStores p:first-child {
 	font-size: .75em;
 	margin-left: 1.2em;
@@ -241,59 +428,367 @@ header nav li img:nth-child(1) {
 }
 .OurStores p:last-child {
 	line-height: 1.2em;
-	padding-bottom: 5em;
+	padding-bottom: 1em;
+	width: 10em;
 }
+.OurStores a {
+	padding: 1em;
+	text-align: center;
+    border-radius: 2em;
+	border: solid .1em var(--color-border);
+	text-decoration: none;
+	margin-left: .67em;;
+	background-color: var(--color-link-background);
+	color: var(--color-link-text);
+}
+
 /*********************/
 /* FOOTER STYLING  */
 /*********************/
-
+details {
+	cursor: pointer;
+}
 footer {
-	color: #ffffff;
-	background-color: #000000;
-	padding: 1.88em 1em;
+    color: var(--color-footer-text);
+    background-color: var(--color-footer-background);
+    padding: 1.88em 1em;
 }
+
+/*********************/
+/* section 1 styling  */
+/*********************/
+/* Link van de code voor de radio button: https://codepen.io/robertspier/pen/LYrmryG*/
 footer h2 {
-	margin: 1em 0em;
-}
-footer h3 {
-	font-size: .88em;
-	color: #ffffff;
-	margin: 0em 0em 1em;
-}
-footer h3:nth-last-of-type(1) {
-	padding-bottom: 5em;
+    padding: 1em 0em;
 }
 footer p {
-	margin: 0em 0em 1.5em;
-	line-height: 1.56em;
+    padding-top: 1.5em;
+    line-height: 1.56em;
 }
-footer ul li {
-	list-style: none;
-	padding: .75em 0em;
-	font-size: .88em;
+/*form styling*/
+footer form ul {
+	display: flex;
+	flex-direction: column;
+	padding: 1em 0em 4em;
 }
-footer ul li:nth-last-of-type(1){
-	padding-bottom: 3.1em;
+footer form li {
+	display: flex;
+    justify-content: start;
+    list-style: none;
+    padding: .75em 0em;
+    font-size: .88em;
 }
-footer button:nth-last-of-type(2) {
-	margin: 0em 0em 3.1em;
-    border-radius: 1.88em;
-	border: .1em solid #ffffff;
-    padding: 1.25em 5em;
-	background-color: #000000;
-    color: #ffffff;
+label {
+	padding-right: 2em;	
 }
-footer p:nth-last-of-type(1) {
-	font-size: .75em;
-	opacity: .7;
-	margin-bottom: 1.13em;
+/*voer je email in styling*/
+input {
+	text-align: left;
+	padding: 1em 1em;
+    border-radius: 3em 0em 0em 3em;
+    border: var(--color-input-border);
+    background-color: var(--color-input-background);
+	color: var(--color-input-text);
+}
+/*verstuurd knop styling*/
+form a{
+	text-decoration: none;
+	color: var(--color-link-text);
+    background-color: var(--color-input-background);
+	padding: 1em 3em;
+    border-radius: 0em 3em 3em 0em;
+}
+
+/*line divider met hr*/
+hr.solid {
+	border-top: solid var(--color-border-hr);
+	margin-bottom: 5em;
+}
+
+/*********************/
+/* section 2 styling  */
+/*********************/
+footer section:nth-of-type(2) details {
+	display: flex;
+	flex-direction: column;
+	padding: .5em 0em .5em;
+}
+footer section:nth-of-type(2) a {
+	padding-top: 1em;
+	text-decoration: none;
+	color: var(--color-link-text);
+}
+
+/*********************/
+/* section 3 styling  */
+/*********************/
+footer section:nth-of-type(3) details {
+	display: flex;
+	flex-direction: column;
+	padding: .5em 0em .5em;
+}
+footer section:nth-of-type(3) a {
+	padding-top: 1em;
+	text-decoration: none;
+	color: var(--color-link-text);
+}
+
+/*********************/
+/* section 4 styling  */
+/*********************/
+footer section:nth-of-type(4) ul {
+	padding-top: 5em;
+	padding-bottom: 2em;
+}
+footer section:nth-of-type(4) li {
+    list-style: none;
+    padding: .75em 0em;
+    font-size: .88em;
+}
+footer section:nth-of-type(4) a{
+	text-decoration: none;
+	color: var(--color-link-text);
+}
+
+/*********************/
+/* section 5 styling  */
+/*********************/
+footer section:nth-of-type(5) p {
+	font-size: .7em;
 	text-align: center;
-	line-height: 1.1em;
+	padding: 5em 0em 3em;
 }
-footer button:nth-last-of-type(1) {
-padding: 30px;
-	background-color: #000000;
-    color: #ffffff;
-	border: none;
-	margin: 0em 7.5em;
+footer section:nth-of-type(5) a{
+	display: flex;
+	text-decoration: none;
+	justify-content: center;
+	color: var(--color-link-text);
+}
+footer section:nth-of-type(5) button {
+	margin-left: 2em;
+	padding: 1em 8em;
+	border-radius: 3em;
+	border: solid .1em var(--color-border-button);
+	background-color: var(--color-button-background);
+}
+footer section:nth-of-type(5) button img {
+	height: 1.5em;
+}
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 38em breed is */
+/****************************************************************/
+@media (min-width:38em) {
+	footer  {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	footer section:nth-of-type(1) p {
+		padding-top: 0;
+	}
+	footer section:nth-of-type(1) input {
+		padding: 1em 8em;
+	}
+
+	footer section:nth-of-type(2) {
+		padding-bottom: 4em;
+		margin: auto;
+	}
+	footer section:nth-of-type(2) summary {
+		display: block;
+	}
+
+	footer section:nth-of-type(3) {
+		padding: 0;
+		margin: auto;
+	}
+	footer section:nth-of-type(3) summary {
+		display: block;
+	}
+
+	footer section:nth-of-type(4) {
+		padding-right: 1em;
+		padding-bottom: 4em;
+	}
+	footer section:nth-of-type(4) a {
+		font-size: 1.1em;
+	}
+
+	footer section:nth-of-type(5) {
+		margin: auto;
+	}
+	footer section:nth-of-type(5) p {
+		padding-bottom: 2em;
+	}
+	footer section:nth-of-type(5) button {
+		display: none;
+	}
+	.OurStores a {
+		padding: 1em;
+		text-align: center;
+		border-radius: 2em;
+		border: 1em;
+		text-decoration: none;
+		margin-left: .67em;;
+		background-color: var(--color-link-background);
+		color: var(--color-link-text);
+	}
+}
+
+/****************************************************************/
+/* 2: Flagship Stores pagina */
+/****************************************************************/
+
+/*********************/
+/* SECTION STYLING 1 */
+/*********************/
+.Stores {
+	padding: 1em;
+}
+.Stores ul {
+	display: flex;
+}
+.Stores li {
+	list-style: none;
+}
+.Stores img {
+	height: 1.8em;
+}
+.Stores h2 {
+	margin: 0 1em 1em;
+	font-size: 1.5em;
+}
+/*styling zoekbalk*/
+.Stores input[type=text] {
+	padding-left: 1em;
+}
+.Stores input {
+	padding: 1.2em 70% 1.2em;
+	margin-top: 2em;
+	border: solid .1em var(--color-border);
+	color: var(--color-text);
+	border-radius: 3em;
+
+	background-color: var(--color-details-background);
+	background-image: url("../images/zoeken-icon.png");
+	Background-repeat: no-repeat;
+	Background-size: 1.5em;
+	Background-position: center right 1em;
+}
+
+/*********************/
+/* SECTION STYLING 2 */
+/*********************/
+.flagshipStores h1 {
+	padding: 2em 1em 0;
+	margin-bottom: 1em;
+}
+.flagshipStores ul {
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(24em, 100%), 1fr) );
+	column-gap: 1em;
+}
+.flagshipStores li {
+	display:flex;
+	flex-direction:column;
+    padding: .1em 0em 2.81em;
+}
+.flagshipStores img {
+	width: 100%;
+	height: auto;
+}
+.flagshipStores h3 {
+	font-size: 1.25em;
+    padding: 1em .8em 0em;
+}
+.flagshipStores p {
+    padding: .4em 1em;
+	width: 12em;
+}
+
+/*styling uitklap menu*/
+.flagshipStores summary {
+	padding: 1em 0.3em 1em;
+	border-top: solid .1em var(--color-border-omlijning);
+	border-bottom: solid .1em var(--color-border-omlijning);
+}
+.flagshipStores details p:nth-of-type(1) {
+    padding: 1em 1em;
+	width: auto;
+	background-color: var(--color-details-background);
+}
+.flagshipStores details p:nth-of-type(2) {
+    padding: 1em 1em;
+	width: auto;
+}
+.flagshipStores details p:nth-of-type(3) {
+    padding: 1em 1em;
+	width: auto;
+	background-color: var(--color-details-background);
+}
+.flagshipStores details p:nth-of-type(4) {
+    padding: 1em 1em;
+	width: auto;
+}
+.flagshipStores details p:nth-of-type(5) {
+    padding: 1em 1em;
+	width: auto;
+	background-color: var(--color-details-background);
+}
+.flagshipStores details p:nth-of-type(6) {
+    padding: 1em 1em;
+	width: auto;
+}
+.flagshipStores details p:nth-of-type(7) {
+    padding: 1em 1em;
+	width: auto;
+	background-color: var(--color-details-background);
+	margin-bottom: 2em;
+}
+/*styling knop*/
+.flagshipStores a {
+	padding: 1em 7em;
+	margin-left: .67em;
+	text-align: center;
+	border-radius: 2em;
+	border: solid .1em var(--color-link-directions-border);
+	text-decoration: none;
+	background-color: var(--color-link-directions-background);
+	color: var(--color-link-directions-text);
+}
+
+
+@media (min-width:48em) {
+	.Stores img {
+		display: none;
+	}
+	.Stores h2 {
+		display: none;
+	}
+	.Stores p {
+		display: none;
+	}
+	.Stores input {
+		display: none;
+	}
+
+	.flagshipStores {
+		padding: 1em;
+	}
+	.flagshipStores h1 {
+		padding: 0;
+	}
+	.flagshipStores ul {
+		display:grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(20em, 100%), 1fr) );
+		column-gap: 1em;
+	}
+	.flagshipStores h3 {
+		padding: .8em 0;
+	}
+	.flagshipStores p{
+		padding: .4em 0;
+		width: 10em;
+	}
 }
