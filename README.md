@@ -316,10 +316,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Class structuur hetzelfde overal, eerste letter ook een hoofdletter
+  - .toonMenu, de punt weghalen in de html
+  - Kijken naar heading structuur
+  - In de laatste 2 summary’s ook lijsten gebruiken
+  - Media query’s onderin plaatsen
+  - Hr tag zonder class gebruiken
+  - Label gebruiken voor tweede pagina “opening hours”
 
 </details>
 
