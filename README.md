@@ -340,19 +340,38 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="homepagina mobiel">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="homepagina desktop">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="flagship store mobiel 1">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="flagship store desktop">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  - Ik heb geleerd hoe je een site responsive moet maken met media query's
+  - Het gebruiken van costum properties is erg handig
+  - Ik heb veel nieuwe html en css elementen geleerd en gebruikt
+  
+  Het gebruiken van grids ging heel goed
+  
+  <img src="readme-images/grid-gebruik.png" width="375px" alt="voorbeeld grids gebruik">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  - De hele site responsive maken
+  - Als ik meer tijd had zou ik een andere tweede pagina maken, zoals een pagina waar je een item in een winkelmandje kan zetten of iets bestellen
+  
+  Ik vondt het best lastig om de footer responsive te maken en het is uiteindelijk redelijk gelukt, maar het lijkt niet op de footer van de originele site
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/footer-responsive.png" width="375px" alt="voorbeeld footer">
+  
+  Het was me niet gelukt om de header op een desktop werkend te krijgen
+  
+  <img src="readme-images/grid-gebruik.png" width="375px" alt="voorbeeld header desktop">
+  
+  Als ik meer tijd had zou ik de items in de hamburger menu beter stijlen
+  
+  <img src="readme-images/hamburgermenu-linkjes.png" width="375px" alt="voorbeeld hamburger menu">
+
 </details>
 
 
