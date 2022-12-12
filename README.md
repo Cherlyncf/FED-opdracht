@@ -340,9 +340,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/homepagina-mobiel.png" width="375px" alt="homepagina mobiel">
-  <img src="readme-images/homepagina-desktop.png" width="375px" alt="homepagina desktop">
-  <img src="readme-images/flagshipstores-mobiel.png" width="375px" alt="flagship store mobiel">
+  <img src="readme-images/homepagina-mobiel.jpg" width="375px" alt="homepagina mobiel">
+  <img src="readme-images/homepagina-desktop.jpg" width="375px" alt="homepagina desktop">
+  <img src="readme-images/flagshipstores-mobiel.jpg" width="375px" alt="flagship store mobiel">
   <img src="readme-images/flagshipstores-desktop.png" width="375px" alt="flagship store desktop">
 
 
