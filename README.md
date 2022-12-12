@@ -244,30 +244,49 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  - Benoemd eerst de aantal onderdelen die in de lijst staan en leest daarna de lijst items één voor één op
+  - Leest eerst de naam van de lijst op, bv: tops en daarna alle linkjes die in de lijst staan 
+  - Leest goed elk kopje, tekst element, naam item, prijs en andere elementen op de site voor
+  - Leest de alt tekst van een afbeelding
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+ 
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+   - Je kan goed door de site tabben
+   
+  Als je over een link of button hovert zie je dat
+  
+  <img src="readme-images/.png" width="375px" alt="voorbeeld hover">
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Je ziet waar je tabt 
+  
+   <img src="readme-images/.png" width="375px" alt="voorbeeld dat de tab zichtbaar is">
+
+  In de footer zie je nu ook op het scherm welke link geselecteerd is, wat op de originele site niet zo is
+  
+  <img src="readme-images/.png" width="375px" alt="voorbeeld footer bevinding">
+
+  Je kan de lijst in de hamburger menu eerst bekijken, voordat je direct een link opent
+  
+  <img src="readme-images/.png" width="375px" alt="voorbeeld link items weergeven in een lijst">
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Ging snel door de desktop site en ook door de mobiele formaat site zonder enige problemen 
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  - Klikte en scrolde snel door de site
+  - De tekst kleur en grote zijn goed leesbaar
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Op de originele site waren niet alle teksten goed leesbaar door de lichtgrijze kleur die gebruikt wordt op lichte achtergronden, ik heb ervoor gekozen om alle teksten zwart te maken en de belangrijkste kopjes dik gedrukt
+  
+   <img src="readme-images/.png" width="375px" alt="voorbeeld tekst goed leesbaar">
 
 </details>
 
