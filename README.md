@@ -75,14 +75,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Je ziet waar je tabt 
   
-   <img src="readme-images/tab-zichtbaar.png" width="375px" alt="voorbeeld dat de tab zichtbaar is">
-
-  In de footer zie je niet op het scherm welke link geselecteerd is
-  
-  <img src="readme-images/footerbevinding.png" width="375px" alt="voorbeeld footer bevinding">
-
-  Oplossing:
-  Ook in de footer de tab zichtbaar maken 
+  <img src="readme-images/tab-zichtbaar.png" width="375px" alt="voorbeeld dat de tab zichtbaar is">
 
   Je kan de lijst in de navigatie niet eerst bekijken, want je opent meteen de link 
   
@@ -91,11 +84,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Oplossing:
   Als je op één van de navigatie list items komt wordt er aangegeven dat je het kan openen, zodat je de andere list items daarin kan zien.
   
- <img src="readme-images/link-items-open.png" width="375px" alt="voorbeeld link items oplossing">
+  <img src="readme-images/link-items-open.png" width="375px" alt="voorbeeld link items oplossing">
 
   #### Motoriek (shocks, elastiekjes)
   Deze test heb ik niet uitgevoerd
-
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   De gebruiker heeft de site getest met een bril die ervoor zorgt dat hij heel slecht en wazig ziet.
@@ -244,6 +236,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
+  Lijst met je bevindingen die in de test naar voren kwamen
 
   #### Screenreader
   - Benoemd eerst de aantal onderdelen die in de lijst staan en leest daarna de lijst items één voor één op
@@ -262,20 +255,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Je ziet waar je tabt 
   
-   <img src="readme-images/.png" width="375px" alt="voorbeeld dat de tab zichtbaar is">
-
-  In de footer zie je nu ook op het scherm welke link geselecteerd is, wat op de originele site niet zo is
-  
-  <img src="readme-images/.png" width="375px" alt="voorbeeld footer bevinding">
+   <img src="readme-images/tab-test.png" width="375px" alt="voorbeeld dat de tab zichtbaar is">
 
   Je kan de lijst in de hamburger menu eerst bekijken, voordat je direct een link opent
   
   <img src="readme-images/hamburgermenu-linkjes.png" width="375px" alt="voorbeeld link items weergeven in een lijst">
 
-
   #### Motoriek (shocks, elastiekjes)
   - Ging snel door de desktop site en ook door de mobiele formaat site zonder enige problemen 
-
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   
