@@ -250,17 +250,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Leest eerst de naam van de lijst op, bv: tops en daarna alle linkjes die in de lijst staan 
   - Leest goed elk kopje, tekst element, naam item, prijs en andere elementen op de site voor
   - Leest de alt tekst van een afbeelding
-
-
- 
-
+  
+    <img src="readme-images/screenreader-test.png" width="375px" alt="voorbeeld screenreader test">
 
   #### Muis en Toetsenbord 
    - Je kan goed door de site tabben
    
   Als je over een link of button hovert zie je dat
   
-  <img src="readme-images/.png" width="375px" alt="voorbeeld hover">
+  <img src="readme-images/hoverstate.png" width="375px" alt="voorbeeld hover">
 
   Je ziet waar je tabt 
   
@@ -272,7 +270,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Je kan de lijst in de hamburger menu eerst bekijken, voordat je direct een link opent
   
-  <img src="readme-images/.png" width="375px" alt="voorbeeld link items weergeven in een lijst">
+  <img src="readme-images/hamburgermenu-linkjes.png" width="375px" alt="voorbeeld link items weergeven in een lijst">
 
 
   #### Motoriek (shocks, elastiekjes)
@@ -286,7 +284,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Op de originele site waren niet alle teksten goed leesbaar door de lichtgrijze kleur die gebruikt wordt op lichte achtergronden, ik heb ervoor gekozen om alle teksten zwart te maken en de belangrijkste kopjes dik gedrukt
   
-   <img src="readme-images/.png" width="375px" alt="voorbeeld tekst goed leesbaar">
+   <img src="readme-images/tekst-goed-leesbaar.png" width="375px" alt="voorbeeld tekst goed leesbaar">
 
 </details>
 
