@@ -41,12 +41,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   De homepagina
   
-  <img src="readme-images/winkels.jpg" width="375px" alt="onze winkels">
+  <img src="readme-images/homepagina.png" width="375px" alt="de homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Onze winkels pagina
   
-  <img src="readme-images/home.jpg" width="375px" alt="de homepagina">
+  <img src="readme-images/flagstores.png" width="375px" alt="onze winkels">
  
 </details>
 
@@ -61,7 +61,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen
 
   #### Screenreader
-  - De screenreader las de tekst snel voor
+  - De screenreader leest de tekst snel voor
   - Benoemd eerst de aantal onderdelen die in de lijst staan en leest daarna de lijst items één voor één op
   - Leest eerst de naam van de lijst op, bv: tops en daarna alle linkjes die in de lijst staan 
   - Leest goed elk kopje, tekst element, naam item, prijs en andere elementen op de site voor
@@ -94,7 +94,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - Hij ging best snel door te site
   - De teksten mogen in het algemeen donkerder
-  - Met moeite kon hij een maat selecteren om de lettertype daar te klein en slecht leesbaar was door de kleur
+  - Met moeite kon hij een maat selecteren omdat de lettertype daar te klein en slecht leesbaar was door de kleur
   - Hij kon de bestelling niet afronden, omdat die pagina veel gebruik maakt van lichte achtergronden in combinatie met een klein lettertype en een lichte tekst kleur
 
   Sommige teksten kon hij niet lezen door de tekstkleur zelf en achtergronden die gecombineerd waren met bepaalde tekstkleuren.
@@ -123,7 +123,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### De home pagina en product pagina: 
-  <img src="readme-images/breakdownschets.jpg" width="375px" alt="breakdown pagina">
+  <img src="readme-images/breakdown-schets" width="375px" alt="breakdown schets">
 
 
 </details>
@@ -143,13 +143,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Het maken van de footer
   
-  <img src="readme-images/footer.png" width="375px" alt="">
+  <img src="readme-images/footer.png" width="375px" alt="voorbeeld maken van de footer">
   
-   <img src="readme-images/footerstyling.png" width="375px" alt="">
+   <img src="readme-images/footerstyling.png" width="375px" alt="voorbeeld footer css">
 
   Styling van de laatste section
   
-  <img src="readme-images/stylingginggoed.png" width="375px" alt="">
+  <img src="readme-images/stylingginggoed.png" width="375px" alt="voorbeeld section styling">
   
   Dit vindt ik lastig:
   - Ik heb geen idee hoe je een form moet maken met radio buttons (voor de footer)
@@ -158,13 +158,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Grids gebruiken en positioneren
   
-  <img src="readme-images/fotometbutton.png" width="375px" alt="">
+  <img src="readme-images/fotometbutton.png" width="375px" alt="voorbeeld foto met button">
 
-  <img src="readme-images/stylingmetcss.png" width="375px" alt="">
+  <img src="readme-images/stylingmetcss.png" width="375px" alt="voorbeeld styling met css">
 
   De juiste CSS code gebruiken voor de verschillende stylingen en sections die ik heb gemaakt
   
-   <img src="readme-images/section1styling.png" width="375px" alt="">
+   <img src="readme-images/section1styling.png" width="375px" alt="voorbeeld section styling 1">
 
  
   
@@ -293,7 +293,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Ik haalde mijn pagina’s door de W3C validator en kreeg een paar fout meldingen die ik makkelijk kon oplossen
 
-  <img src="readme-images/warning-melding.png" width="375px" alt="">
+  <img src="readme-images/warning-melding.png" width="375px" alt="voorbeeld waarschuwing melding">
   
   
   Dit vindt ik lastig:
@@ -303,16 +303,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Op de mobiele formaat heb ik een uitklapmenu in de footer, maar als ik het scherm groter maakt moet de uitklapmenu volledig verdwijnen en de content erin moet volledig verspreiden in de footer
   
-  <img src="readme-images/footer-details.png" width="375px" alt="">
+  <img src="readme-images/footer-details.png" width="375px" alt="voorbeeld uitklapmenu">
   
   Ik wil dat de dagen en tijden in het uitklapmenu bij de “opening hours” uit elkaar gaan staan, maar ik weet niet hoe dat moet. Ook wil ik dat de knop in het midden staat, maar dat lukt niet zo goed.
   
-   <img src="readme-images/openingstijden.png" width="375px" alt="">
+   <img src="readme-images/openingstijden.png" width="375px" alt="voorbeeld openingstijden tabel">
   
   ### Agenda voor meeting
   
   vragen:
-  - Mag in een lijst een button zetten (krijg error te zien) ?
+  - Mag in een lijst een button zetten (krijg error te zien)?
   - Ik krijg waarschuwingen over dat mijn sections geen headings hebben, maar moet je een heading voor elke section gebruiken?
   - Hoe kan ik tekst in één p tag uit elkaar laten staan?
   - Is het mogelijk om een details tag te stylen?
@@ -366,7 +366,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. Bron van alle foto's: https://dailypaperclothing.com 
+  1. Bron van alle kleding en winkel foto's: https://dailypaperclothing.com 
   2. Bron zoek icoon: https://cdn-icons-png.flaticon.com/512/54/54481.png
   3. Bron winkelmandje icoon: https://cdn-icons-png.flaticon.com/512/118/118096.png
   4. Bron hamburgermenu icoon: https://www.veryicon.com/download/png/miscellaneous/01-monochrome-linear-icon-library/menu-bar?s=256
@@ -374,5 +374,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   6. Bron terug knop: https://cdn-icons-png.flaticon.com/512/1/1216.png
   7. Bron styling header responsive: https://codepen.io/shooft/pen/GRxXboQ
   8. Bron styling radio button: https://codepen.io/robertspier/pen/LYrmryG
+  9. Bron responsive detail: https://codepen.io/robertspier/pen/GRGzYEG
+  10. Bron Twitter icoon: https://www.iconpacks.net/free-icon/twitter-logo-2429.html
+  11. Bron Facebook icoon: https://nl.m.wikipedia.org/wiki/Bestand:Facebook_logo_%28square%29.png
+  12. Bron Instagram icoon: https://www.edigitalagency.com.au/instagram/new-instagram-logo-white-png-transparent/
+  13. Bron TikTok icoon: https://www.freepnglogos.com/pics/tik-tok-logo
+  14. Bron YouTube icoon: https://www.flaticon.com/free-icon/youtube_1384060
 
 </details>
