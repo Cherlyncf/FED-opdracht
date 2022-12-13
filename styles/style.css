@@ -19,7 +19,9 @@ button, summary {
 	
 	/*styling voor linkjes*/
 	--color-link-background:#000000;
+	--color-link-background2:#ffffff;
 	--color-link-text:#ffffff;
+	--color-link-text2:#000000;
 	
 	/*styling voor knoppen*/
 	--color-button-background:#000000;
@@ -46,6 +48,9 @@ button, summary {
 	--color-link-directions-text:#000000;
 	--color-link-directions-border:#000000;
 	--color-details-background: #eee;
+	
+	/*styling hover link*/
+	--color-hover-link: #357a38;
 }
 
 /********************/
@@ -64,115 +69,103 @@ main {
 	padding-bottom: 3em;
 }
 
-/*************/
-/* DE HEADER */
-/*************/
-@media (min-width:38em) {
-	hr.solid {
-		border: none;
-	}
-	header button {
-		display: none;
-	}
-	header ul li img {
-		padding-right: 1em;
-	}
-	header li {
-		padding-right: 1em;
-	}
-}
 header {
+	position: sticky;
+	top: 0;
+	
+	justify-content: space-between;
+	align-items: center;
 	display: flex;
-	min-height: 4em;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
+	
 	border-bottom: solid .1em var(--color-border-omlijning);
-    background-color: var(--color-background);
+	min-height: 4em;
+    
+	background-color: var(--color-background);
   }
 /* alle links in de header als het menu open is */
 header a {
-	padding:1em 0;
-	color:var(--color-text);
 	text-decoration:none;
+	color:var(--color-text);
   }
+/* styling van de logo */
 header a img {
-	padding-left: 1em;
 	height: 1.5em;
+	padding-left: 1em;
 }
-/* header styling menu dicht */
-header li{
-    display: inline;
+/* states styling*/
+header a:focus {
+	border: solid .1em var(--color-border);
 }
+header a:active {
+  	border-color: var(--color-border);
+}
+
+/* header styling kleine scherm */
 header ul:first-child {
     display: flex;
 	align-items: center;
-    gap: .8em;
+    
+	gap: .8em;
     padding: 1em;
 }
-header ul li:first-of-type {
-    margin-right: auto;
+header li{
+    display: inline;
 }
 header li img{
     height: 1.5em;
 }
 
 /*************************/
-/* BEIDE BUTTONS Styling */
+/* BEIDE BUTTONS STYLING */
 /*************************/
 header button {
-	appearance:none;
+	border:none;
 	background-color:var(--color-background);
-	border:black;
 }
 header button img {
 	height: 1.7em;
 }
+/* states styling*/
+header button:focus {
+	border: solid .2em var(--color-border);
+}
+header button:active {
+  	border-color: var(--color-border);
+}
 
 /***********************/
-/* SLUIT BUTTON Styling*/
+/* SLUIT BUTTON STYLING*/
 /***********************/
 nav button {
-    margin-left: 17em;
+    margin-left: 14em;
 }
   
 /************/
 /* HET MENU */
 /************/
 nav {
-	padding:1em;
-	
-	display:grid;
-	align-content:start;
-	gap:.5em;
-	
 	position:fixed;
 	left:50%;
 	right:0;
 	top:0;
 	bottom:0;
+	padding:1em;
 	
-	transform:translatex(100%);
-	background-color: var(--color-background);
+	align-content:start;
+	display:grid;	
+	
 	transition:transform 1.5s;
+	transform:translatex(100%);
+
+	gap:.5em;
+	background-color: var(--color-background);
   }
 /* als menu open is */
-nav.toonMenu {
-/* JOUW CODE HIER - stap 4 */
+nav.ToonMenu {
 	transform:translatex(0);
 }
-.toonMenu a img {
+.ToonMenu a img {
 	height: 1em;
-}
-  
-/*******************/
-/* LIJST MET LINKS */
-/*******************/
-nav ul { 
-	margin:0; 
-	padding:0em;
-	list-style:none;
 }
   
 /************************/
@@ -180,47 +173,23 @@ nav ul {
 /************************/
 nav a {
 	/* icon en tekst met gap-je naast elkaar */
-	display:flex;
 	align-items:center;
+	display:flex;
+
 	column-gap:.25em;
-	border-bottom:solid 1px var(--menu-border);
+	border-bottom:solid 1em var(--menu-border);
 }
 nav a img {
 	width:auto;
 	height:2em;
 }
-nav a.active {
-	font-weight:bold;
+/* states styling*/
+nav a:hover {
+	text-decoration: underline;
+	color: var(--color-hover-link);
 }
-  
-/****************************************************************/
-/* styling voor de header als de browser minimaal 38em breed is */
-/****************************************************************/
-/*link van de code: https://codepen.io/shooft/pen/GRxXboQ */
-@media (min-width:38em) {
-	header > button {
-		display:none;
-	}
-	nav {
-		position:static;
-		transform:none;
-		padding:0;
-		background:none;
-	}
-	nav button {
-		display:none;
-	}
-	nav ul {
-		display:flex;
-		gap:1em;
-	}
-	nav a {
-		flex-direction:column;
-		border:none;
-	}
-	header > a:last-of-type {
-		flex-direction:column;
-	}
+nav a:focus {
+	border: solid .1em var(--color-border);
 }
 
 /****************************************************************/
@@ -231,20 +200,23 @@ nav a.active {
 /* SECTION STYLING 1 */
 /*********************/
 .WinterFavourItems  {
+	padding-top: 40%;
+
 	background-image: url("../images/gifting-hero.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100%;
-	padding-top: 40%;
 }
 .WinterFavourItems h1 {
-	font-size: 1.8em;
 	padding: 0em 1em 2em;
+
+	font-size: 1.8em;
 }
 .WinterFavourItems ul {
-	display: flex;
 	align-items: center;
+
+	display: flex;
+
 	padding-bottom: 3em;
 }
 .WinterFavourItems li {
@@ -254,75 +226,98 @@ nav a.active {
 	margin: .8em 0em 3em 1em;
 	padding: 1em 1.5em;
 	width: auto;
-	border-radius: 2em;
 	border: solid .1em var(--color-border);
+	border-radius: 2em;
+
 	background-color: var(--color-link-background);
-	color: var(--color-link-text);
+	
 	text-decoration: none;
+	color: var(--color-link-text);
+}
+/* states styling*/
+.WinterFavourItems a:hover {
+	transition-duration: .7s;
+
+	border: solid var(--color-border-button);
+	
+	background-color: var(--color-link-background2);
+	color: var(--color-link-text2);
+}
+.WinterFavourItems a:focus {
+	border: solid .8em var(--color-border-omlijning);
+}
+.WinterFavourItems a:active {
+  border-color: var(--color-border);
 }
 
 /*********************/
 /* SECTION STYLING 2 */
 /*********************/
 .NewestArrivals p:nth-child(1) {
-    font-size: .75em;
-	padding: 3em 1.5em 0em;
+	padding: 3em 1em 0em;
 }
 .NewestArrivals h2{
 	padding: 0em .67em .6em;
 }
-.NewestArrivals h4 {
-    font-size: 1.2em;
+.NewestArrivals h3 {
 	padding-top: 1em;
-}
-.NewestArrivals ul p:nth-child(3) {
-	font-size: 1em;
-	padding-top: .5em;
-	padding-bottom: 1.5em;
+
+    font-size: 1.2em;
 }
 .NewestArrivals ul {
 	display:flex;
 	overflow-x:auto;
 }
+.NewestArrivals ul p:nth-child(3) {
+	padding-top: .5em;
+	padding-bottom: 1.5em;
+}
 .NewestArrivals li {
+	list-style: none;
+
 	flex-basis: 40%;
 	flex-shrink:0;
-	list-style: none;
+
 	padding: 0em 1em 1em 1em;
 }
 .NewestArrivals a {
 	margin: 1em 1em 3em;
 	padding: 1em 3em;
-	border-radius: 2em;
+
 	border: solid .1em var(--color-border);
-	text-decoration: none;
+	border-radius: 2em;
+
 	background-color: var(--color-link-background);	
+	
+	text-decoration: none;
 	color: var(--color-link-text);
+}
+/* states styling*/
+.NewestArrivals a:hover {
+	transition-duration: .7s;
+
+	border: solid var(--color-border-button);
+
+	background-color: var(--color-link-background2);
+	color: var(--color-link-text2);
+}
+.NewestArrivals a:focus {
+	border: solid .8em var(--color-border-omlijning);
+}
+.NewestArrivals a:active {
+  	border-color: var(--color-border);
 }
 
 /*********************/
 /* SECTION STYLING 3 */
 /*********************/
 .EssentialsCollection p:first-child {
-	padding: 6em 1.2em 0em;
-	font-size: .75em;
+	padding: 6em .9em 0em;
 }
 .EssentialsCollection h2 {
 	padding: 0em 0em 0.67em 0.6em;
 }
-.EssentialsCollection img:nth-last-of-type(3) {
-	width: auto;
-	height: 100%;
-	padding: 0em 1em 1.38em;
-}
-.EssentialsCollection img:nth-last-of-type(3) {
-    width: 50%;
-    height: auto;
-    padding: 0em 1em 0em;
-    margin-top: 1.5em;
-}
 .EssentialsCollection p:nth-of-type(2) {
-	font-size: 1em;
 	padding: 2em 1em;
 }
 .EssentialsCollection ul {
@@ -330,29 +325,48 @@ nav a.active {
 	overflow-x:auto;
 }
 .EssentialsCollection li {
+	list-style: none;
+
 	flex-basis: 40%;
 	flex-shrink:0;
-	list-style: none;
+
 	padding: 0em 1em 1em 1em;
 }
-.EssentialsCollection h4 {
+.EssentialsCollection h3 {
 	font-size: 1.2em;
     padding: 1em 0em .4em;
 }
-.EssentialsCollection p:last-of-type{
-	font-size: 1em;
-}
 .EssentialsCollection a {
-	display: flex;
 	justify-content: center;
+
+	display: flex;
+
 	margin: .8em 1em;
 	padding: 1em;
 	width: 15em;
-	border-radius: 2em;
+
 	border: solid .1em var(--color-border);
-	text-decoration: none;
+	border-radius: 2em;
+
 	background-color: var(--color-link-background);
+	
+	text-decoration: none;
 	color: var(--color-link-text);
+}
+/* states styling*/
+.EssentialsCollection a:hover {
+	transition-duration: .7s;
+	
+	border: solid var(--color-border-button);
+
+	background-color: var(--color-link-background2);
+	color: var(--color-link-text2);
+}
+.EssentialsCollection a:focus {
+	border: solid .8em var(--color-border-omlijning);
+}
+.EssentialsCollection a:active {
+  	border-color: var(--color-border);
 }
 
 /*********************/
@@ -360,91 +374,122 @@ nav a.active {
 /*********************/
 .DailypaperCollections ul {
 	display:grid;
+	
 	grid-template-columns: repeat(auto-fit, minmax(min(32em, 100%), 1fr) );
 	column-gap: 1em;
+	
 	padding: 3em 0 0em;
 }
 .DailypaperCollections li {
-	display:flex;
 	flex-direction:column;
+	display:flex;
+	
     padding: .1em 0em 2.81em;
 }
-.DailypaperCollections img {
-	width: 100%;
-	height: 90%;
-}
 .DailypaperCollections p {
+	padding: .5em 1em;
     font-size: 1em;
-    padding: .5em 0.5em;
 }
-.DailypaperCollections h2 {
-    padding: 0em .4em 1em;
+.DailypaperCollections h3 {
+    padding: 0em .8em 1em;
     font-size: 1.25em;
 }
 .DailypaperCollections a {
+	margin-left: .67em;;
     padding: 1em;
     width: 10em;
-	text-align: center;
-    border-radius: 2em;
+
 	border: solid .1em var(--color-border);
-	text-decoration: none;
-	margin-left: .67em;;
+	border-radius: 2em;
+
 	background-color: var(--color-link-background);
+	
+	text-align: center;
+	text-decoration: none;
 	color: var(--color-link-text);
+}
+/* states styling*/
+.DailypaperCollections a:hover {
+	transition-duration: .7s;
+	
+	border: solid var(--color-border-button);
+
+	background-color: var(--color-link-background2);
+	color: var(--color-link-text2);
+}
+.DailypaperCollections a:focus {
+	border: solid .8em var(--color-border-omlijning);
+}
+.DailypaperCollections a:active {
+  	border-color: var(--color-border);
 }
 
 /*********************/
 /* SECTION STYLING 5 */
 /*********************/
 .OurStores p:first-child {
-	font-size: .75em;
-	margin-left: 1.2em;
+    margin-left: 1em;
 }
 .OurStores h2 {
 	padding: 0em 0em .67em 0.6em;
-	font-size: 1.5em;
 }
 .OurStores ul {
 	display:flex;
 	overflow-x:auto;
 }
 .OurStores li {
+	list-style: none;
+
 	flex-basis: 50%;
 	flex-shrink:0;
-	list-style: none;
+
 	padding: 0em 1em .5em 1em;
-}
-.OurStores img {
-	width: auto;
-	height: auto;
 }
 .OurStores h3 {
 	font-size: 1.25em;
     padding: .4em 0em;
 }
 .OurStores p:last-child {
-	line-height: 1.2em;
-	padding-bottom: 1em;
+	padding-bottom: 2em;
 	width: 10em;
 }
 .OurStores a {
-	padding: 1em;
-	text-align: center;
-    border-radius: 2em;
-	border: solid .1em var(--color-border);
-	text-decoration: none;
 	margin-left: .67em;;
+	padding: 1em;
+
+	border: solid .1em var(--color-border);
+	border-radius: 2em;
+
 	background-color: var(--color-link-background);
+
+	text-align: center;
+	text-decoration: none;
 	color: var(--color-link-text);
+}
+/* states styling*/
+.OurStores a:hover {
+	transition-duration: .7s;
+
+	border: solid var(--color-border-button);
+
+	background-color: var(--color-link-background2);
+	color: var(--color-link-text2);
+}
+.OurStores a:focus {
+	border: solid .8em var(--color-border-omlijning);
+}
+.OurStores a:active {
+  	border-color: var(--color-border);
 }
 
 /*********************/
 /* FOOTER STYLING  */
 /*********************/
 footer {
+	padding: 1.88em 1em;
+
     color: var(--color-footer-text);
     background-color: var(--color-footer-background);
-    padding: 1.88em 1em;
 }
 
 /*********************/
@@ -459,71 +504,101 @@ footer p {
     line-height: 1.56em;
 }
 /*form styling*/
-footer form ul {
-	display: flex;
+form ul {
 	flex-direction: column;
+	display: flex;
+
 	padding: 1em 0em 4em;
 }
-footer form li {
+form li {
+	list-style: none;
+	justify-content: start;
+	
 	display: flex;
-    justify-content: start;
-    list-style: none;
+    
     padding: .75em 0em;
     font-size: .88em;
+}
+/*voer je email in styling*/
+input {
+    padding: 1em 12em 1em 1em;
+
+	border: var(--color-input-border);
+	border-radius: 3em 0em 0em 3em;
+
+	background-color: var(--color-input-background);
+	
+	text-align: left;
+	color: var(--color-input-text);
 }
 label {
 	padding-right: 2em;	
 }
-/*voer je email in styling*/
-input {
-	text-align: left;
-	padding: 1em 1em;
-    border-radius: 3em 0em 0em 3em;
-    border: var(--color-input-border);
-    background-color: var(--color-input-background);
-	color: var(--color-input-text);
-}
+
 /*verstuurd knop styling*/
 form a{
+	padding: 1em 3em;
+    
+	border-radius: 0em 3em 3em 0em;
+    background-color: var(--color-input-background);
+
 	text-decoration: none;
 	color: var(--color-link-text);
-    background-color: var(--color-input-background);
-	padding: 1em 3em;
-    border-radius: 0em 3em 3em 0em;
 }
 
-/*line divider met hr*/
-hr.solid {
-	border-top: solid var(--color-border-hr);
-	margin-bottom: 5em;
+/* states styling*/
+form a:hover {
+	transition-duration: .7s;
+
+	background-color: var(--color-link-background2);
+	color: var(--color-link-text2);
+}
+form a:focus {
+	border: solid .5em var(--color-border-omlijning);
+}
+form a:active {
+  	border-color: var(--color-border);
 }
 
 /*********************/
 /* section 2 styling  */
 /*********************/
-footer section:nth-of-type(2) details {
-	display: flex;
-	flex-direction: column;
+footer section:nth-of-type(2) summary {
+	padding-bottom: 1em;
+}
+footer section:nth-of-type(2) li {
+	list-style: none;
 	padding: .5em 0em .5em;
+
 }
 footer section:nth-of-type(2) a {
 	padding-top: 1em;
+
 	text-decoration: none;
 	color: var(--color-link-text);
+}
+/* state styling*/
+footer section:nth-of-type(2) a:hover {
+	color: var(--color-hover-link);
 }
 
 /*********************/
 /* section 3 styling  */
 /*********************/
-footer section:nth-of-type(3) details {
-	display: flex;
-	flex-direction: column;
+footer section:nth-of-type(3) li {
+	list-style: none;
 	padding: .5em 0em .5em;
 }
 footer section:nth-of-type(3) a {
 	padding-top: 1em;
+
 	text-decoration: none;
 	color: var(--color-link-text);
+}
+
+/* state styling*/
+footer section:nth-of-type(3) a:hover {
+	color: var(--color-hover-link);
 }
 
 /*********************/
@@ -535,98 +610,83 @@ footer section:nth-of-type(4) ul {
 }
 footer section:nth-of-type(4) li {
     list-style: none;
+
     padding: .75em 0em;
-    font-size: .88em;
+    font-size: 1em;
 }
 footer section:nth-of-type(4) a{
 	text-decoration: none;
 	color: var(--color-link-text);
 }
 
+/* state styling*/
+footer section:nth-of-type(4) a:hover {
+	color: var(--color-hover-link);
+}
+
 /*********************/
 /* section 5 styling  */
 /*********************/
-footer section:nth-of-type(5) p {
-	font-size: .7em;
-	text-align: center;
-	padding: 5em 0em 3em;
-}
-footer section:nth-of-type(5) a{
-	display: flex;
-	text-decoration: none;
-	justify-content: center;
-	color: var(--color-link-text);
-}
 footer section:nth-of-type(5) button {
-	margin-left: 2em;
+	margin-left: .5em;
 	padding: 1em 8em;
-	border-radius: 3em;
+	
 	border: solid .1em var(--color-border-button);
+	border-radius: 3em;
+	
 	background-color: var(--color-button-background);
 }
 footer section:nth-of-type(5) button img {
 	height: 1.5em;
 }
+footer section:nth-of-type(5) p {
+	padding: 5em 0em 3em;
 
-/****************************************************************/
-/* styling voor de footer als de browser minimaal 38em breed is */
-/****************************************************************/
-@media (min-width:38em) {
-	footer  {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	footer section:nth-of-type(1) p {
-		padding-top: 0;
-	}
-	footer section:nth-of-type(1) input {
-		padding: 1em 8em;
-	}
-
-	footer section:nth-of-type(2) {
-		padding-bottom: 4em;
-		margin: auto;
-	}
-	footer section:nth-of-type(2) summary {
-		display: block;
-	}
-
-	footer section:nth-of-type(3) {
-		padding: 0;
-		margin: auto;
-	}
-	footer section:nth-of-type(3) summary {
-		display: block;
-	}
-
-	footer section:nth-of-type(4) {
-		padding-right: 1em;
-		padding-bottom: 4em;
-	}
-	footer section:nth-of-type(4) a {
-		font-size: 1.1em;
-	}
-
-	footer section:nth-of-type(5) {
-		margin: auto;
-	}
-	footer section:nth-of-type(5) p {
-		padding-bottom: 2em;
-	}
-	footer section:nth-of-type(5) button {
-		display: none;
-	}
-	.OurStores a {
-	padding: 1em;
+	font-size: .7em;
 	text-align: center;
-	border-radius: 2em;
-	border: 1em;
+}
+footer section:nth-of-type(5) ul {
+	justify-content: center;
+
+	display: flex;
+
+	padding-bottom: 3em;
+	gap: 1.5em;
+}
+footer section:nth-of-type(5) li {
+	list-style: none;
+}
+footer section:nth-of-type(5) img {
+	height: 1.5em;
+}
+footer section:nth-of-type(5) a{
+	justify-content: center;
+	display: flex;
+
 	text-decoration: none;
-	margin-left: .67em;;
-	background-color: var(--color-link-background);
 	color: var(--color-link-text);
-	}
+}
+
+/* states styling*/
+footer section:nth-of-type(5) button:hover {
+	transition-duration: .7s;
+	background-color: var(--color-link-background2);
+}
+footer section:nth-of-type(5) button:focus {
+	border: solid .5em var(--color-border-omlijning);
+}
+footer section:nth-of-type(5) button:active {
+  	border-color: var(--color-border-button);
+}
+/* states styling sociale media iconen*/
+footer section:nth-of-type(5) a:hover {
+	border: .2em solid var(--color-border-button);
+}
+footer section:nth-of-type(5) a:focus {
+	border: solid .5em var(--color-border-omlijning);
+}
+footer section:nth-of-type(5) a:active {
+  	border-color: var(--color-hover-link);
 }
 
 /****************************************************************/
@@ -648,7 +708,7 @@ footer section:nth-of-type(5) button img {
 .Stores img {
 	height: 1.8em;
 }
-.Stores h2 {
+.Stores h1 {
 	margin: 0 1em 1em;
 	font-size: 1.5em;
 }
@@ -657,109 +717,132 @@ footer section:nth-of-type(5) button img {
 	padding-left: 1em;
 }
 .Stores input {
-	padding: 1.2em 70% 1.2em;
 	margin-top: 2em;
+	padding: 1.2em 70% 1.2em;
+	
 	border: solid .1em var(--color-border);
-	color: var(--color-text);
 	border-radius: 3em;
 
-	background-color: var(--color-details-background);
 	/*!-- bron van foto: https://cdn-icons-png.flaticon.com/512/54/54481.png*/
 	background-image: url("../images/zoeken-icon.png");
 	Background-repeat: no-repeat;
 	Background-size: 1.5em;
 	Background-position: center right 1em;
+	background-color: var(--color-details-background);
+
+	color: var(--color-text);
 }
 
 /*********************/
 /* SECTION STYLING 2 */
 /*********************/
-.flagshipStores h1 {
-	padding: 2em 1em 0;
+.FlagshipStores h2 {
 	margin-bottom: 1em;
+	padding: 2em 1em 0;
 }
-.flagshipStores ul {
+.FlagshipStores ul {
 	display:grid;
+
 	grid-template-columns: repeat(auto-fit, minmax(min(24em, 100%), 1fr) );
 	column-gap: 1em;
 }
-.flagshipStores li {
-	display:flex;
+.FlagshipStores li {
 	flex-direction:column;
-    padding: .1em 0em 2.81em;
+    padding: .1em 0 0;
 }
-.flagshipStores img {
-	width: 100%;
-	height: auto;
-}
-.flagshipStores h3 {
+.FlagshipStores h3 {
+	padding: 1em .8em 0em;
 	font-size: 1.25em;
-    padding: 1em .8em 0em;
 }
-.flagshipStores p {
+.FlagshipStores p {
     padding: .4em 1em;
 	width: 12em;
 }
 
-/*styling uitklap menu*/
-.flagshipStores summary {
-	padding: 1em 0.3em 1em;
+/*tabel styling*/
+.FlagshipStores summary {
 	border-top: solid .1em var(--color-border-omlijning);
 	border-bottom: solid .1em var(--color-border-omlijning);
+	
+	padding: 1em;
 }
-.flagshipStores details p:nth-of-type(1) {
-    padding: 1em 1em;
-	width: auto;
-	background-color: var(--color-details-background);
+table {
+    border-collapse: collapse;
+	width: 100%;
 }
-.flagshipStores details p:nth-of-type(2) {
-    padding: 1em 1em;
-	width: auto;
+tr:nth-child(odd) {background: #eee}
+th:nth-of-type(1) {
+	padding: 1em 4em 1em 1em;
+	font-weight: 500;
 }
-.flagshipStores details p:nth-of-type(3) {
-    padding: 1em 1em;
-	width: auto;
-	background-color: var(--color-details-background);
-}
-.flagshipStores details p:nth-of-type(4) {
-    padding: 1em 1em;
-	width: auto;
-}
-.flagshipStores details p:nth-of-type(5) {
-    padding: 1em 1em;
-	width: auto;
-	background-color: var(--color-details-background);
-}
-.flagshipStores details p:nth-of-type(6) {
-    padding: 1em 1em;
-	width: auto;
-}
-.flagshipStores details p:nth-of-type(7) {
-    padding: 1em 1em;
-	width: auto;
-	background-color: var(--color-details-background);
-	margin-bottom: 2em;
-}
-/*styling knop*/
-.flagshipStores a {
-	padding: 1em 7em;
-	margin-left: .67em;
-	text-align: center;
-	border-radius: 2em;
-	border: solid .1em var(--color-link-directions-border);
-	text-decoration: none;
-	background-color: var(--color-link-directions-background);
-	color: var(--color-link-directions-text);
+th:nth-of-type(2) {
+	padding-right: 1em;
+
+	text-align: right;
+	font-weight: 500;
 }
 
 /****************************************************************/
-/* styling voo als de browser minimaal 38em breed is */
+/* styling voor als de browser minimaal 38em breed is */
 /****************************************************************/
-@media (min-width:48em) {
-	.Stores img {
+
+/*************************************/
+/* DE HEADER HAMBURGER MENU STYLING */
+/***********************************/
+@media (max-width:38em) {
+	nav section:first-of-type {
 		display: none;
 	}
-	.Stores h2 {
+	nav summary {
+		font-weight: 600;
+	}
+}
+
+/*link van de code: https://codepen.io/shooft/pen/GRxXboQ */
+@media (min-width:38em) {
+	header button {
+		display: none;
+	}
+	header ul li img {
+		padding-right: 1em;
+	}
+	header li {
+		padding-right: 1em;
+	}
+
+	nav {
+		position:static;
+		transform:none;
+		padding:0;
+		background:none;
+	}
+	nav details {
+		display: none;
+	}
+	nav button {
+		display:none;
+	}
+	nav ul {
+		display:flex;
+		gap:1em;
+	}
+	nav a {
+		flex-direction:column;
+		border:none;
+	}
+	header > a:last-of-type {
+		flex-direction:column;
+	}
+}
+
+/*************/
+/* PAGINA 1 en 2 */
+/*************/
+@media (min-width:48em) {
+	.Stores h1 {
+		display: none;
+	}
+	.Stores img {
 		display: none;
 	}
 	.Stores p {
@@ -772,13 +855,20 @@ footer section:nth-of-type(5) button img {
 	.flagshipStores {
 		padding: 1em;
 	}
-	.flagshipStores h1 {
+	.flagshipStores h2 {
 		padding: 0;
 	}
 	.flagshipStores ul {
 		display:grid;
+		
 		grid-template-columns: repeat(auto-fit, minmax(min(20em, 100%), 1fr) );
-		column-gap: 1em;
+		column-gap: 1em;	
+	}
+	.FlagshipStores li {
+		list-style: none;
+	}
+	.FlagshipStores img {
+		padding: 0 1em;
 	}
 	.flagshipStores h3 {
 		padding: .8em 0;
@@ -786,5 +876,85 @@ footer section:nth-of-type(5) button img {
 	.flagshipStores p{
 		padding: .4em 0;
 		width: 10em;
+	}
+	.FlagshipStores details {
+		padding: 0 1em;
+	}
+
+	.OurStores a {
+		margin-left: .67em;;
+		padding: 1em;
+
+		border: 1em;
+		border-radius: 2em;
+		
+		background-color: var(--color-link-background);
+		
+		text-align: center;
+		text-decoration: none;
+		color: var(--color-link-text);
+	}
+}
+
+/*************/
+/* DE FOOTER */
+/*************/
+@media (min-width:38em) {
+	footer  {
+		flex-wrap: wrap;
+		display: flex;
+	}
+
+	footer section:nth-of-type(1) p {
+		padding-top: 0;
+	}
+	footer section:nth-of-type(1) input {
+		padding: 1em 8em;
+	}
+
+	footer section:nth-of-type(2) {
+		margin: auto;
+		padding-bottom: 5em;
+	}
+	footer section:nth-of-type(2) summary {
+		display: block;
+	}
+
+	footer section:nth-of-type(3) {
+		margin: auto;
+		padding-bottom: 2em;
+	}
+	footer section:nth-of-type(3) summary {
+		display: block;
+	}
+
+	footer section:nth-of-type(4) {
+		padding-right: 1em;
+		padding-bottom: 5em;
+	}
+	footer section:nth-of-type(4) a {
+		font-size: 1em;
+	}
+
+	footer section:nth-of-type(5) {
+		margin: auto;
+	}
+	footer section:nth-of-type(5) p {
+		padding-bottom: 2em;
+	}
+	footer section:nth-of-type(5) button {
+		display: none;
+	}
+	/* Disable click on desktop by removing pointer events*/
+	footer details {
+		pointer-events: none;
+	}
+	
+	/*  Hide the arrow on desktop*/
+	footer details > summary {
+	  list-style: none;
+	}
+	footer details > summary::-webkit-details-marker {
+	  display: none;
 	}
 }
