@@ -18,27 +18,76 @@
 <body>
     <header>
         <a href="index.html"><img src="images/dailypaper-logo.png" alt="Daily Paper logo"></a>
-
-		<section class=".toonMenu">
+		<section class="ToonMenu">
 			<ul>
 				<!-- bron van foto: https://cdn-icons-png.flaticon.com/512/54/54481.png -->
                 <li><img src="images/zoeken-icon.png" alt="zoek icoon"></li>
 				<!-- bron van foto: https://cdn-icons-png.flaticon.com/512/118/118096.png -->
                 <li><img src="images/shopping-bag.png" alt="winkelmandje"></li>
 				<!-- bron van foto: https://www.veryicon.com/download/png/miscellaneous/01-monochrome-linear-icon-library/menu-bar?s=256 -->
-				<button aria-hidden="true"><img src="images/menu.png" alt="hamburger menu"></button>
+				<li><button aria-hidden="true"><img src="images/menu.png" alt="hamburger menu"></button></li>
 			</ul>
 		</section>
+	
 		<nav>
-		<!-- bron van foto: https://www.flaticon.com/free-icon/clear-button_60994 -->
+			<!-- bron van foto: https://www.flaticon.com/free-icon/clear-button_60994 -->
+			<!-- aria hidden kan worden gebruikt om niet interactieve inhoud, zoals afbeeldingen en uitgevouwen menu's te verbergen voor screenreader gebruikers  -->
 			<button aria-hidden="true"><img src="images/sluiten.png" alt="sluit knop"></button>
-			<ul>
-				<li><a href="#"> Men</a></li>
-				<li><a href="#">Women</a></li>
-				<li><a href="#">Accessories</a></li>
-				<li><a href="#"> Collections</a></li>
-				<li><a href="#"> Gift Guide</a></li>
-			</ul>
+			<section>
+				<ul>
+					<li><a href="#"> Men</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#"> Collections</a></li>
+					<li><a href="#"> Gift Guide</a></li>
+				</ul>
+			</section>
+
+			<details>
+				<summary>Men</summary>
+				<ul>
+					<li><a href="#">Tops</a></li>
+					<li><a href="#">Bottoms</a></li>
+					<li><a href="#">Season Highlights</a></li>
+				</ul>	
+			</details>
+
+			<details>
+				<summary>Women</summary>
+				<ul>
+					<li><a href="#">Tops</a></li>
+					<li><a href="#">Bottoms</a></li>
+					<li><a href="#">Season Highlights</a></li>
+				</ul>	
+			</details>
+
+			<details>
+				<summary>Accessories</summary>
+				<ul>
+					<li><a href="#">All accessories</a></li>
+					<li><a href="#">Headwear</a></li>
+					<li><a href="#">Socks</a></li>
+					<li><a href="#">Bags</a></li>
+					<li><a href="#">Scarves</a></li>
+					<li><a href="#">Other</a></li>
+				</ul>	
+			</details>
+			
+			<details>
+				<summary>Collections</summary>
+				<ul>
+					<li><a href="#">Collections</a></li>
+					<li><a href="#">Collaborations</a></li>
+				</ul>	
+			</details>
+			
+			<details>
+				<summary>Gift Guide</summary>
+				<ul>
+					<li><a href="#">Gifts for Him</a></li>
+					<li><a href="#">Gifts for Her</a></li>
+				</ul>	
+			</details>
 		</nav>
     </header>
 
@@ -47,61 +96,129 @@
             <ul>
 				<!-- bron van alle foto's: https://cdn-icons-png.flaticon.com/512/1/1216.png -->
                 <li><a href="index.html"><img src="images/knop-links.png" alt="terug gaan knop"></a></li>
-                <li><h2>Stores</h2></li>
+                <li><h1>Stores</h1></li>
             </ul>
             <p>On April 25th, 2016 we opened the doors to our first ever flagship, in Amsterdam Old West. In the meantime we have 3 Flagship Stores.</p>
             <input type="text" placeholder="Search by location..">
         </section>
+
 		<!-- bron van alle foto's: https://dailypaperclothing.com -->
-        <section class="flagshipStores">
-            <h1>Flagship Stores</h1>
+        <section class="FlagshipStores">
+            <h2>Flagship Stores</h2>
             <ul>
                 <li><img src="images/dailypaper-winkel-amsterdam-2.png" alt="Daily Paper winkel in Amsterdam">
                     <h3>Amsterdam</h3>
                     <p>Bilderdijkstraat 131 1053 KN, Amsterdam</p>
-                    <details>
+					<details>
                         <summary>Opening hours</summary>
-                            <p>Sunday 12:00 till 18:00</p>
-                            <p>Monday 11:00 till 19:00</p>
-                            <p>Tuesday 11:00 till 19:00</p>
-                            <p>Wednesday 11:00 till 19:00</p>
-                            <p>Thursday 11:00 till 19:00</p>
-                            <p>Friday 11:00 till 19:00</p>
-                            <p>Saturday 11:00 till 19:00</p>
-                            <a href="#">Get directions</a>
+							<table>
+								<tr>
+									<th>Sunday</th>
+									<th>12:00 till 18:00</th>
+								</tr>
+								<tr>
+									<th>monday</th>
+									<th>11:00 till 19:00</th>
+								</tr>
+								<tr>
+									<th>Tuesday</th>
+									<th>11:00 till 19:00</th>
+								</tr>
+								<tr>
+									<th>Wednesday</th>
+									<th>11:00 till 19:00</th>
+								</tr>
+								<tr>
+									<th>Thursday</th>
+									<th>11:00 till 19:00</th>
+								</tr>
+								<tr>
+									<th>Friday</th>
+									<th>11:00 till 19:00</th>
+								</tr>
+								<tr>
+									<th>Saturday</th>
+									<th>11:00 till 19:00</th>
+								</tr>
+							</table>
                     </details>
                 </li>
+				
 
                 <li><img src="images/dailypaper-winkel-londen.png" alt="Daily Paper winkel in London">
                     <h3>London</h3>
                     <p>4-16 Great Pulteney, London, W1F 9ND</p>
                     <details>
                         <summary>Opening hours</summary>
-                            <p>Sunday 12:00 till 18:00</p>
-                            <p>Monday 11:00 till 19:00</p>
-                            <p>Tuesday 11:00 till 19:00</p>
-                            <p>Wednesday 11:00 till 19:00</p>
-                            <p>Thursday 11:00 till 19:00</p>
-                            <p>Friday 11:00 till 19:00</p>
-                            <p>Saturday 11:00 till 19:00</p>
-                            <a href="#">Get directions</a>
+							<table>
+								<tr>
+									<th>Sunday</th>
+									<th>12:00 till 18:00</th>
+								</tr>
+								<tr>
+									<th>monday</th>
+									<th>11:00 till 19:00</th>
+								</tr>
+								<tr>
+									<th>Tuesday</th>
+									<th>11:00 till 19:00</th>
+								</tr>
+								<tr>
+									<th>Wednesday</th>
+									<th>11:00 till 19:00</th>
+								</tr>
+								<tr>
+									<th>Thursday</th>
+									<th>11:00 till 19:00</th>
+								</tr>
+								<tr>
+									<th>Friday</th>
+									<th>11:00 till 19:00</th>
+								</tr>
+								<tr>
+									<th>Saturday</th>
+									<th>11:00 till 19:00</th>
+								</tr>
+							</table>
                     </details>
                 </li>
 
                 <li><img src="images/dailypaper-winkel-newyork.png" alt="Daily Paper winkel in New York">
                     <h3>New York</h3>
                     <p>18 Delancey St New York, NY 10002</p>
-                    <details>
-                        <summary>Opening hours</summary>
-                            <p>Sunday 12:00 till 18:00</p>
-                            <p>Monday closed</p>
-                            <p>Tuesday 11:00 till 19:00</p>
-                            <p>Wednesday 11:00 till 19:00</p>
-                            <p>Thursday 11:00 till 19:00</p>
-                            <p>Friday 11:00 till 19:00</p>
-                            <p>Saturday 11:00 till 19:00</p>
-                            <a href="#">Get directions</a>
-                    </details>
+						<details>
+							<summary>Opening hours</summary>
+								<table>
+									<tr>
+										<th>Sunday</th>
+										<th>12:00 till 18:00</th>
+									</tr>
+									<tr>
+										<th>Monday</th>
+										<th>Closed</th>
+									</tr>
+									<tr>
+										<th>Tuesday</th>
+										<th>11:00 till 19:00</th>
+									</tr>
+									<tr>
+										<th>Wednesday</th>
+										<th>11:00 till 19:00</th>
+									</tr>
+									<tr>
+										<th>Thursday</th>
+										<th>11:00 till 19:00</th>
+									</tr>
+									<tr>
+										<th>Friday</th>
+										<th>11:00 till 19:00</th>
+									</tr>
+									<tr>
+										<th>Saturday</th>
+										<th>11:00 till 19:00</th>
+									</tr>
+								</table>
+						</details>
                 </li>
             </ul>
         </section>
@@ -130,25 +247,27 @@
 				</form>
 		</section>
 
-		<hr class="solid">
-
 		<section>
 			<details>
 				<summary>About Daily Paper</summary>
-					<a href="#">Stores</a>
-					<a href="#">Careers</a>
-					<a href="#">Unite</a>
+				<ul>
+					<li><a href="#">Stores</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Unite</a></li>
+				</ul>	
 			</details>
 		</section>
 
 		<section>
 			<details>
 				<summary>Help</summary>
-					<a href="#">FAQ</a>
-					<a href="#">Shipping</a>
-					<a href="#">Returns</a>
-					<a href="#">Payment</a>
-					<a href="#">Contact</a>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Shipping</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Payment</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
 			</details>
 		</section>
 		
@@ -163,11 +282,24 @@
 		</section>
 
 		<section>
-		 <!-- bron van alle foto's: https://dailypaperclothing.com -->
-			<button><img src="images/gb.svg" alt="Britse vlag"></button>
-			<p>© 2022 Daily Paper Holding B.V. is the holder of several Daily Paper® trademarks. These trademarks may not be used by third parties without permission of Daily Paper Holding B.V.</p>
-			<a href="#">Worldwide</a>
-		</section>
+			<!-- bron van alle foto's: https://dailypaperclothing.com -->
+			   <button><img src="images/gb.svg" alt="Britse vlag"></button>
+			   <p>© 2022 Daily Paper Holding B.V. is the holder of several Daily Paper® trademarks. These trademarks may not be used by third parties without permission of Daily Paper Holding B.V.</p>
+			   <ul>
+				<!-- bron foto: https://www.iconpacks.net/free-icon/twitter-logo-2429.html-->
+				<li><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
+				<!-- bron foto: https://nl.m.wikipedia.org/wiki/Bestand:Facebook_logo_%28square%29.png-->
+				<li><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
+				<!-- bron foto: https://www.edigitalagency.com.au/instagram/new-instagram-logo-white-png-transparent/ -->
+				<li><a href="#"><img src="images/instagram.png" alt="instagram"></a></li>
+				<!-- bron foto: https://www.freepnglogos.com/pics/tik-tok-logo -->
+				<li><a href="#"><img src="images/tiktok.png" alt="tiktok"></a></li>
+				<!-- bron foto: https://www.flaticon.com/free-icon/youtube_1384060 -->
+				<li><a href="#"><img src="images/youtube.png" alt="youtube"></a></li>
+			</ul>
+			   <a href="#">Worldwide</a>
+		   </section>
 	</footer>
+	
 	<script  src="scripts/script.js"></script>
 </body>

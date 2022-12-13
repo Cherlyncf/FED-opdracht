@@ -18,29 +18,79 @@
 <body>
 	<header>
 		<a href="index.html"><img src="images/dailypaper-logo.png" alt="Daily Paper logo"></a>
-		<section class=".toonMenu">
+		<section class="ToonMenu">
 			<ul>
 				<!-- bron van foto: https://cdn-icons-png.flaticon.com/512/54/54481.png -->
                 <li><img src="images/zoeken-icon.png" alt="zoek icoon"></li>
 				<!-- bron van foto: https://cdn-icons-png.flaticon.com/512/118/118096.png -->
                 <li><img src="images/shopping-bag.png" alt="winkelmandje"></li>
 				<!-- bron van foto: https://www.veryicon.com/download/png/miscellaneous/01-monochrome-linear-icon-library/menu-bar?s=256 -->
-				<button><img src="images/menu.png" alt="hamburger menu">
-				</button>
+				<li><button aria-hidden="true"><img src="images/menu.png" alt="hamburger menu"></button></li>
 			</ul>
 		</section>
+
 		<nav>
-		<!-- bron van foto: https://www.flaticon.com/free-icon/clear-button_60994 -->
+			<!-- bron van foto: https://www.flaticon.com/free-icon/clear-button_60994 -->
+			<!-- aria hidden kan worden gebruikt om niet interactieve inhoud, zoals afbeeldingen en uitgevouwen menu's te verbergen voor screenreader gebruikers  -->
 			<button aria-hidden="true"><img src="images/sluiten.png" alt="sluit knop"></button>
-			<ul>
-				<li><a href="#"> Men</a></li>
-				<li><a href="#">Women</a></li>
-				<li><a href="#">Accessories</a></li>
-				<li><a href="#"> Collections</a></li>
-				<li><a href="#"> Gift Guide</a></li>
-			</ul>
+			<section>
+				<ul>
+					<li><a href="#"> Men</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#"> Collections</a></li>
+					<li><a href="#"> Gift Guide</a></li>
+				</ul>
+			</section>
+
+			<details>
+				<summary>Men</summary>
+				<ul>
+					<li><a href="#">Tops</a></li>
+					<li><a href="#">Bottoms</a></li>
+					<li><a href="#">Season Highlights</a></li>
+				</ul>	
+			</details>
+
+			<details>
+				<summary>Women</summary>
+				<ul>
+					<li><a href="#">Tops</a></li>
+					<li><a href="#">Bottoms</a></li>
+					<li><a href="#">Season Highlights</a></li>
+				</ul>	
+			</details>
+
+			<details>
+				<summary>Accessories</summary>
+				<ul>
+					<li><a href="#">All accessories</a></li>
+					<li><a href="#">Headwear</a></li>
+					<li><a href="#">Socks</a></li>
+					<li><a href="#">Bags</a></li>
+					<li><a href="#">Scarves</a></li>
+					<li><a href="#">Other</a></li>
+				</ul>	
+			</details>
+			
+			<details>
+				<summary>Collections</summary>
+				<ul>
+					<li><a href="#">Collections</a></li>
+					<li><a href="#">Collaborations</a></li>
+				</ul>	
+			</details>
+			
+			<details>
+				<summary>Gift Guide</summary>
+				<ul>
+					<li><a href="#">Gifts for Him</a></li>
+					<li><a href="#">Gifts for Her</a></li>
+				</ul>	
+			</details>
 		</nav>
 	</header>
+
 	<main>
 		<section class="WinterFavourItems">
 			<h1>Winter Favourites</h1>
@@ -49,30 +99,32 @@
 				<li><a href="#">Shop Women</a></li>
 			</ul>
 		</section>
+
 		<section class="NewestArrivals">
 			<!-- bron van alle foto's: https://dailypaperclothing.com -->
 			<p>SHOP CATEGORY</p>
 			<h2>Newest arrivals</h2>
 			<ul>
 				<li><img src="images/hopuff_mono_black_fronta.jpg" alt="puffer jas zwart voorkant">
-					<h4>Black Hopuff Monogram Jacket</h4>
+					<h3>Black Hopuff Monogram Jacket</h3>
 					<p>€269.95</p>
 				</li>
 				<li><img src="images/black-enar-coat-front.jpg" alt="zwarte enar jas voorkant">
-					<h4>Black Enar Coat</h4>
+					<h3>Black Enar Coat</h3>
 					<p>€269.95</p>
 				</li>
 				<li><img src="images/varsity-jacket-black_front.jpg" alt="basebal jas voorkant">
-					<h4>Daily Paper x Filling Pieces Black Varsity Jacket</h4>
+					<h3>Daily Paper x Filling Pieces Black Varsity Jacket</h3>
 					<p>€349.95</p>
 				</li>
 				<li><img src="images/tee-black_front.jpg" alt="trui zwart voorkant">
-					<h4>Black Etype Knit Sweater</h4>
+					<h3>Black Etype Knit Sweater</h3>
 					<p>€119.95</p>
 				</li>
 			</ul>
 			<a href="#">Shop New arrivals</a>
 		</section>
+
 		<section class="EssentialsCollection">
 			<!-- bron van alle foto's: https://dailypaperclothing.com -->
 			<p>PERMANENT COLLECTION</p>
@@ -82,87 +134,88 @@
 			<ul>
 				<li>
 					<img src="images/erib-front_1.jpg" alt="zwart blauw eric sweater voorkant">
-					<h4>Black Blue Eric Sweater</h4>
+					<h3>Black Blue Eric Sweater</h3>
 					<p>€99.95</p>
 				</li>
 				<li>
 					<img src="images/black-front.jpg" alt="zwarte holt hoodie voorkant">
-					<h4>Black Holt Hoody</h4>
+					<h3>Black Holt Hoody</h3>
 					<p>€129.95</p>
 				</li>
 				<li>
 					<img src="images/archhoodblack_fr.jpg" alt="zwarte arch hoodie voorkant">
-					<h4>Black Arch Hoody</h4>
+					<h3>Black Arch Hoody</h3>
 					<p>€109.95</p>
 				</li>
 				<li>
 					<img src="images/dp-x-fp-knitted-sweater-forest-biome-green_front.jpg" alt="Daily Paper x Filling Pieces donkergroene hoodie voorkant">
-					<h4>Daily Paper x Filling Pieces Forest Biome Green Flag Hoody</h4>
+					<h3>Daily Paper x Filling Pieces Forest Biome Green Flag Hoody</h3>
 					<p>€129.95</p>
 				</li>
 			</ul>
 			<a href="#">Men Essentials</a>
 			<a href="#">Women Essentials</a>
 		</section>
+
 		<section class="DailypaperCollections">
 		<!-- bron van alle foto's: https://dailypaperclothing.com -->
 			<ul>
 				<li><img src="images/foto1.png" alt="foto Daily Life with Shenie Fogo">
 					<p>COLLECTION</p>
-					<h2>Daily Life with Shenie Fogo</h2>
+					<h3>Daily Life with Shenie Fogo</h3>
 					<a href="#">Shop Now</a>
 				</li>
 				<li><img src="images/holiday-2-people.jpg" alt="foto Daily Paper Unveil FW22 Holiday Collection">
 					<p>COLLECTION</p>
-					<h2>Daily Paper Unveil FW22 Holiday Collection</h2>
+					<h3>Daily Paper Unveil FW22 Holiday Collection</h3>
 					<a href="#">Shop Now</a>
 				</li>
 				<li><img src="images/foto3.png" alt="foto FW22 Holiday">
 					<p>COLLECTION</p>
-					<h2>FW22 Holiday</h2>
+					<h3>FW22 Holiday</h3>
 					<a href="#">Shop Now</a>
 				</li>
 				<li><img src="images/foto4.png" alt="foto Jackets">
 					<p>COLLECTION</p>
-					<h2>Jackets</h2>
+					<h3>Jackets</h3>
 					<a href="#">Shop Now</a>
 				</li>
 				<li><img src="images/foto5.png" alt="foto Daily Paper x Filling Pieces">
 					<p>COLLECTION</p>
-					<h2>Daily Paper x Filling Pieces</h2>
+					<h3>Daily Paper x Filling Pieces</h3>
 					<a href="#">Explore</a>
 				</li>
 				<li><img src="images/foto6.png" alt="foto Accessories">
 					<p>COLLECTION</p>
-					<h2>Accessories</h2>
+					<h3>Accessories</h3>
 					<a href="#">Explore</a>
 				</li>
 			</ul>
 		</section>
+
 		<section class="OurStores">
 		<!-- bron van alle foto's: https://dailypaperclothing.com -->
 			<p>FIND US</p>
-			<H2>Our Stores</H2>
+			<h2>Our Stores</h2>
 			<ul>
 				<li>
 					<img src="images/dailypaper-winkel-amsterdam-2.png" alt="Daily Paper winkel in Amsterdam">
-					<H3>Amsterdam</H3>
+					<h3>Amsterdam</h3>
 					<p>Bilderdijkstraat 131 1053 KN, Amsterdam</p>
 				</li>
 				<li>
 					<img src="images/dailypaper-winkel-londen.png" alt="Daily Paper winkel in London">
-					<H3>London</H3>
+					<h3>London</h3>
 					<p>14-16 Great Pulteney, London, W1F 9ND</p>
 				</li>
 				<li>
 					<img src="images/dailypaper-winkel-newyork.png" alt="Daily Paper winkel in New York">
-					<H3>New York</H3>
+					<h3>New York</h3>
 					<p>18 Delancey St New York, NY 10002</p>
 				</li>
 			</ul>
 			<a href="flagship-stores.html">Discover our locations</a>
-
-</section>
+		</section>
 	</main>
 	
 	<footer>
@@ -173,7 +226,11 @@
 				<form>
 					<ul>
 						<li>
+							<!-- input type definieert een tekstinvoerveld van één regel, hier "radio" voor een radio button-->
+							<!-- met "name" definieer je één radio groep waaruit slechts één rondje in een groep tegelijkertijd geselecteerd kan worden -->
 							<input type="radio" id="Menswear" name="newsletter">
+							<!-- label wordt gebruikt voor screenreader gebruikers, het label wordt hardop voor gelezen wanneer de gebruiker op het element is gericht-->
+							<!-- label wordt ook gebruikt voor selectievakjes die heel klein zijn en heeft het een id nodig om de input aan de label te verbinden-->
 							<label for="Menswear">Menswear</label>
 							<input type="radio" id="Womenswear" name="newsletter">
 							<label for="Womenswear">Womenswear</label>
@@ -191,25 +248,27 @@
 				</form>
 		</section>
 
-		<hr class="solid">
-
 		<section>
 			<details>
 				<summary>About Daily Paper</summary>
-					<a href="#">Stores</a>
-					<a href="#">Careers</a>
-					<a href="#">Unite</a>
+				<ul>
+					<li><a href="#">Stores</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Unite</a></li>
+				</ul>	
 			</details>
 		</section>
 
 		<section>
 			<details>
 				<summary>Help</summary>
-					<a href="#">FAQ</a>
-					<a href="#">Shipping</a>
-					<a href="#">Returns</a>
-					<a href="#">Payment</a>
-					<a href="#">Contact</a>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Shipping</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Payment</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
 			</details>
 		</section>
 		
@@ -227,6 +286,18 @@
 		 <!-- bron van alle foto's: https://dailypaperclothing.com -->
 			<button><img src="images/gb.svg" alt="Britse vlag"></button>
 			<p>© 2022 Daily Paper Holding B.V. is the holder of several Daily Paper® trademarks. These trademarks may not be used by third parties without permission of Daily Paper Holding B.V.</p>
+			<ul>
+				<!-- bron foto: https://www.iconpacks.net/free-icon/twitter-logo-2429.html-->
+				<li><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
+				<!-- bron foto: https://nl.m.wikipedia.org/wiki/Bestand:Facebook_logo_%28square%29.png-->
+				<li><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
+				<!-- bron foto: https://www.edigitalagency.com.au/instagram/new-instagram-logo-white-png-transparent/ -->
+				<li><a href="#"><img src="images/instagram.png" alt="instagram"></a></li>
+				<!-- bron foto: https://www.freepnglogos.com/pics/tik-tok-logo -->
+				<li><a href="#"><img src="images/tiktok.png" alt="tiktok"></a></li>
+				<!-- bron foto: https://www.flaticon.com/free-icon/youtube_1384060 -->
+				<li><a href="#"><img src="images/youtube.png" alt="youtube"></a></li>
+			</ul>
 			<a href="#">Worldwide</a>
 		</section>
 	</footer>
